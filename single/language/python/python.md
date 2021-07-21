@@ -21,3 +21,7 @@ https://www.aliyundrive.com/drive/folder/60f30be43c02d2fcfd9446e0abc327918f9be99
 
 ## 
 [Python print()](https://www.programiz.com/python-programming/methods/built-in/print)
+
+##
+book
+https://edu.anarcho-copy.org/Programming%20Languages/Python/
