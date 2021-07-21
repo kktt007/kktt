@@ -2,6 +2,8 @@ regex
 
 https://alfredexcelvachris.files.wordpress.com/2020/04/regular-expressions-direct_urls.pdf
 
+https://help.libreoffice.org/4.1/Common/List_of_Regular_Expressions
+
 https://pubs.opengroup.org/onlinepubs/009695399/basedefs/xbd_chap09.html
 
 https://www3.ntu.edu.sg/home/ehchua/programming/howto/Regexe.html
