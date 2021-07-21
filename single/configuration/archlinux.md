@@ -122,13 +122,15 @@ st
 
 ## 工具
 
-vivaldi-widevine autojump chromium-widevine
+- sudo pacman -S python python-pip
+- 
+- vivaldi-widevine chromium-widevine ~~autojump~~
 
-visual-studio-code-bin
+- visual-studio-code-bin
 
 appimagelauncher(appimagelauncher用来启动appimage程序,比如picgo,启动后可直接menu中找到)
 
-fcitx fcitx-im fcitx-rime kcm-fcitx fcitx-table-extra
+- fcitx fcitx-im fcitx-rime kcm-fcitx fcitx-table-extra
 
 ```
 sudo echo -e "export GTK_IM_MODULE=fcitx\nexport QT_IM_MODULE=fcitx\nexport XMODIFIERS=@im=fcitx\nexport LANG=en_US.UTF-8\nexport LANGUAGE=en_US:en_GB:en\nexport LC_CTYPE=en_US.UTF-8">>~/.xprofile
