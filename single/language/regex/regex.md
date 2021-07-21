@@ -1,5 +1,7 @@
 regex
 
+https://www.regular-expressions.info/refreplacebackref.html
+
 https://alfredexcelvachris.files.wordpress.com/2020/04/regular-expressions-direct_urls.pdf
 
 https://help.libreoffice.org/4.1/Common/List_of_Regular_Expressions
@@ -33,3 +35,5 @@ $ matches position just after the last character of the string
 []范围
 {} 次数
 ()可以有
+
+Use $ (dollar) instead of \ (backslash) to replace references. Use $0 to replace the whole found string.
