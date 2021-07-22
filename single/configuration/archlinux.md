@@ -50,7 +50,7 @@ Server = https://opentuna.cn/archlinuxcn/$arch
 
 networkmanager nm-connection-editor dosfstools ntfs-3g git wget curl zsh bbswitch bash-completion rxvt-unicode
 
-sudo
+sudo(包括含在base-devel中)
 
 pacman -S dialog wpa_supplicant netctl wireless_tools wpa_actiond
 
@@ -84,6 +84,7 @@ xf86-input-libinput
 alsa-utils pulseaudio pulseaudio-alsa alsa-plugins alsa-firmware kmix pavucontrol-qt
 
 base-devel libx11 libxext
+// base-devel包括(autoconf automake binutils bison fakeroot file findutils flex gawk gcc gettext grep groff gzip libtool m4 make pacman patch pkgconf sed sudo texinfo which)
 
 xdg-user-dirs // `LC_ALL=C xdg-user-dirs-update` 命令可以强制创建英语目录
 
