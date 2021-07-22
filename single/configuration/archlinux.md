@@ -169,6 +169,10 @@ yay:
 
 plasma5-applets-window-appmenu
 
+
+## clean
+sudo pacman -R $(pacman -Qdtq)          #清理系统中无用的依赖包
+sudo pacman -Scc            #清理缓存，看路径像是之前下载的安装
 ## 配置缩放
 
 系统设置→显示和监控→显示配置→缩放显示 150% = 96 +144*50%
