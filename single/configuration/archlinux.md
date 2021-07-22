@@ -144,7 +144,8 @@ yay：
 
 appimagelauncher(appimagelauncher用来启动appimage程序,比如picgo,启动后可直接menu中找到)
 
-- fcitx fcitx-im fcitx-rime kcm-fcitx fcitx-table-extra
+- fcitx-im fcitx-rime kcm-fcitx fcitx-table-extra
+fcitx-im 包括(fcitx-qt5 fctix)
 
 ```
 sudo echo -e "export GTK_IM_MODULE=fcitx\nexport QT_IM_MODULE=fcitx\nexport XMODIFIERS=@im=fcitx\nexport LANG=en_US.UTF-8\nexport LANGUAGE=en_US:en_GB:en\nexport LC_CTYPE=en_US.UTF-8">>~/.xprofile
