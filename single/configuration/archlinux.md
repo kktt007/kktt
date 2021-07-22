@@ -28,7 +28,7 @@ https://github.com/XxAcielxX/arch-plasma-install
 
 reflector
 
-reflector --country China --age 12 --fastest 10 --sort rate --save /etc/pacman.d/mirrorlist
+reflector --country China --age 12 --fastest 8 --sort rate --save /etc/pacman.d/mirrorlist
 
 reflector --fastest 20 --sort rate --save /etc/pacman.d/mirrorlist
 
@@ -109,11 +109,11 @@ ttf-joypixels wqy-microhei
 
 p7zip unrar tar unzip unarchiver tftp-hpa fd neovim xclip meld tmux weechat neofetch terminator flameshot mpv smplayer gstreamer gst-libav gst-plugins-good
 
-brave-bin chromium-vaapi chromium-widevine firefox-beta-bin
-
-vivaldi vivaldi-ffmpeg-codecs
+vivaldi vivaldi-ffmpeg-codec
 
 yay:
+
+brave-bin chromium-vaapi chromium-widevine firefox-beta-bin vivaldi-widevine
 
 nerd-fonts-meslo 
 
@@ -136,8 +136,8 @@ st
 ## 工具
 
 - sudo pacman -S python python-pip
-- 
-- vivaldi-widevine chromium-widevine ~~autojump~~
+
+yay：
 
 - visual-studio-code-bin
 
