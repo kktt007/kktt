@@ -60,11 +60,24 @@ intel-ucode
 
 xorg-server xorg-server-common xorg-xrandr arandr
 
-qt kf5 kf5-aids plasma sddm kde-system kde-utilities kde-graphics kdeconnect packagekit-qt5
+qt kf5 kf5-aids plasma sddm packagekit-qt5
 
 - sudo systemctl enable sddm.service 
 
 - sudo systemctl enable NetworkManager.service //MMMMMMMMMM
+
+
+## kde-system
+dolphin kcron khelpcenter ksystemlog partitionmanager
+
+## kde-utilities
+konsole filelight kdf kgpg kate kbackup markdownpart kdialog kcharselect sweeper
+
+## kde-graphics
+gwenview  kcolorchooser okular kruler
+
+## kde-network
+kdeconnect kdenetwork-filesharing kget
 
 xf86-input-libinput
 
