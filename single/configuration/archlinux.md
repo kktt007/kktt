@@ -48,7 +48,7 @@ Server = https://opentuna.cn/archlinuxcn/$arch
 
 ## 必备
 
-networkmanager dosfstools ntfs-3g git wget curl zsh bbswitch bash-completion rxvt-unicode
+networkmanager nm-connection-editor dosfstools ntfs-3g git wget curl zsh bbswitch bash-completion rxvt-unicode
 
 sudo
 
@@ -68,7 +68,7 @@ qt kf5 kf5-aids plasma sddm kde-system kde-utilities kde-graphics kdeconnect pac
 
 xf86-input-libinput
 
-alsa-utils pulseaudio pulseaudio-alsa pavucontrol
+alsa-utils pulseaudio pulseaudio-alsa alsa-plugins alsa-firmware kmix pavucontrol-qt
 
 base-devel libx11 libxext
 
@@ -89,7 +89,7 @@ optimus-manager-qt
 ------------------------
 ## 配置 https://wiki.archlinux.org/title/Hardware_video_acceleration 
 
-nvidia nvidia-utils libva-vdpau-driver libva-utils libva-intel-driver
+nvidia nvidia-utils nvidia-settings libva-vdpau-driver libva-utils libva-intel-driver
 
 ttf-joypixels wqy-microhei
 (<string>文泉驿等宽微米黑</string>)
