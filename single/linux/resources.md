@@ -10,3 +10,11 @@ https://ryanstutorials.net/linuxtutorial/
 https://www.linuxtopia.org/online_books/index.html
 
 https://www.linux.com/training-tutorials/
+
+## basic
+
+http://www.ee.surrey.ac.uk/Teaching/Unix/index.html
+
+http://www2.geog.ucl.ac.uk/~plewis/geogg122_current/_build/html/Chapter1_Unix/f3_1_unix_intro.html
+
+https://www.pluralsight.com/guides/beginner-linux-navigation-manual
