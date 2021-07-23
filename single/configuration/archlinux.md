@@ -48,7 +48,7 @@ Server = https://opentuna.cn/archlinuxcn/$arch
 
 ## 必备
 
-networkmanager nm-connection-editor dosfstools ntfs-3g git wget curl zsh bbswitch bash-completion rxvt-unicode
+networkmanager nm-connection-editor dosfstools ntfs-3g git wget curl zsh zsh-autosuggestions zsh-syntax-highlighting zsh-completions bbswitch bash-completion rxvt-unicode
 
 sudo(包括含在base-devel中)
 
