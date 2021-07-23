@@ -140,6 +140,7 @@ Plug 'jiazhoulvke/jianfan'      " 简繁转换 Tcn, Scn
 Plug 'simnalamburt/vim-mundo'   " 显示修改历史
 
 Plugin 'sbdchd/neoformat'       " 自动格式化
+Plug 'godlygeek/tabular' "文本对齐, 使用 :Tabularize /= 可以等号对齐多行 The tabular plugin must come before vim-markdown
 
 "" Ruby and Rails helpers
 " Rails helpers
@@ -162,10 +163,17 @@ Plugin 'scrooloose/syntastic' " 语法检查
 Plug 'vim-syntastic/syntastic' " 语法
 
 "============= markdown ================
+Plug 'instant-markdown/vim-instant-markdown', {'for': 'markdown', 'do': 'yarn install'}
+
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
-Plug 'godlygeek/tabular' "文本对齐, 使用 :Tabularize /= 可以等号对齐多行
+
+" post install (yarn install | npm install) then load plugin only for editing supported files
+Plug 'prettier/vim-prettier', {
+  \ 'do': 'yarn install',
+  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'svelte', 'yaml', 'html'] }
+
 Plug 'plasticboy/vim-markdown' " markdkown 增强
-Plug 'instant-markdown/vim-instant-markdown', {'for': 'markdown'} " markdown即时预览
+
 
 Plugin 'vim-scripts/taglist.vim'
 
