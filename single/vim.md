@@ -98,6 +98,8 @@ Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' } "考虑
 
 " 批量注释
 " Plug 'preservim/nerdcommenter'
+" let NERDSpaceDelims = 1   " 在左注释之后/右注释之前留有空格
+
 Plug 'tpope/vim-commentary' " 更好的注释
 
 " 下面两个插件要配合使用，可以自动生成代码块
