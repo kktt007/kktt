@@ -51,11 +51,10 @@ ZSH_THEME=""
 fpath+=$ZSH_CUSTOM/themes/pure
 plugins=(git git-prompt sudo fzf ripgrep npm yarn systemd aliases alias-finder z history zsh_reload)
 
-source ~/github/z.sh
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
 source $ZSH/oh-my-zsh.sh
+source ~/github/z.sh
+# source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+# source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # You can't "export" your .bashrc to a .zshrc
 # source ~/.bash_profile if below doesn't work
@@ -63,9 +62,9 @@ source $ZSH/oh-my-zsh.sh
 
 # autoload the function compinit and to call it
 autoload -U promptinit; promptinit
-# autoload -U compinit && compinit to do
 zstyle ':prompt:pure:prompt:*' color cyan
 zstyle :prompt:pure:git:stash show yes
+rm -f ~/.zcompdump; compinit
 prompt pure
 
 export VISUAL=nvim
