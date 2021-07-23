@@ -16,6 +16,10 @@ Just make sure not to put any line in your vimrc that you don’t understand.
 
 :PlugInstall
 
+python标准 https://www.python.org/dev/peps/pep-0008/
+https://docs.python-guide.org/dev/env/
+
+https://gist.github.com/ReggiePuksta/7d679276ec8420012368 参考nnoremap
 开始配置
 https://github.com/joshukraine/linux-dotfiles/blob/master/vimrc
 https://github.com/jonhoo/configs/blob/master/editor/.config/nvim/init.vim
@@ -27,6 +31,9 @@ https://github.com/skwp/dotfiles/blob/master/vimrc
 https://github.com/philgyford/vim-files/blob/main/vimrc
 https://gist.github.com/henriquemenezes/31a477c9ffe2aa5ef5c7
 https://gist.github.com/kozo002/5318149
+
+
+https://gist.github.com/ReggiePuksta/7d679276ec8420012368
 
 " 搜索 autocmd FileType python setlocal" "et" "ts=4" "sw=4" site:github.com
 
