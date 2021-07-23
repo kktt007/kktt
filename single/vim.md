@@ -24,7 +24,11 @@ https://github.com/siduck76/neovim-dots
 https://github.com/theniceboy/nvim/blob/master/README_cn.md
 https://github.com/mantinband/best-vim-config-ever/blob/master/.vimrc
 https://github.com/skwp/dotfiles/blob/master/vimrc
+https://github.com/philgyford/vim-files/blob/main/vimrc
+https://gist.github.com/henriquemenezes/31a477c9ffe2aa5ef5c7
+https://gist.github.com/kozo002/5318149
 
+" 搜索 autocmd FileType python setlocal" "et" "ts=4" "sw=4" site:github.com
 
 https://github.com/sonph/onehalf
 https://github.com/dracula/vim
@@ -83,7 +87,8 @@ Plug 'vim-airline/vim-airline' " 应该不需要Powerline了
 Plug 'preservim/nerdtree' " 文件管理
 Plug 'preservim/tagbar' " 需要配置,显示文档的层级 切换和跳转到代码中对应的变量和函数的位置 标签导航
 Plug 'Yggdroot/indentLine' " 缩进标尺
-rainbow
+
+Plug 'luochen1990/rainbow' 括号颜色
 Plug 'easymotion/vim-easymotion' " 跳转
 Plug 'ycm-core/YouCompleteMe' " 参考配置 https://github.com/ycm-core/YouCompleteMe#linux-64-bit 安装相关语言的库
 
@@ -108,7 +113,7 @@ Plug 'easymotion/vim-easymotion'                    " 空格任意跳转
 Plug 'bronson/vim-visual-star-search'
 Plug 'jiangmiao/auto-pairs'                         " 匹配括号
 Plug 'dhruvasagar/vim-table-mode'                   " 自动表格, 使用`\tm` 就进入了表格模式, 会进行自动对齐
-
+Plugin 'Raimondi/delimitMate'                       " Auto closing of quotes, brackets,
 " ============= Appearance ============
 Plug 'joshdick/onedark.vim'
 Plug 'ap/vim-css-color'              " 显示 css 颜色
@@ -125,6 +130,7 @@ Plug 'tpope/vim-fugitive'       " git 插件
 Plug 'jiazhoulvke/jianfan'      " 简繁转换 Tcn, Scn
 Plug 'simnalamburt/vim-mundo'   " 显示修改历史
 
+Plugin 'sbdchd/neoformat'       " 自动格式化
 
 "" Ruby and Rails helpers
 " Rails helpers
@@ -139,15 +145,13 @@ Plug 'prabirshrestha/asyncomplete-lsp.vim'
 Plug 'mattn/vim-lsp-settings'
 Plug 'prabirshrestha/async.vim'
 
-" 对齐插件,我最喜欢的
-Plugin 'godlygeek/tabular'
-" Syntax Checking
-Plugin 'scrooloose/syntastic'
 
-" Git wrapper
-Plugin 'tpope/vim-fugitive'
+Plugin 'godlygeek/tabular' " 对齐插件,我最喜欢的
+
+Plugin 'scrooloose/syntastic' " 语法检查
 
 Plug 'vim-syntastic/syntastic' " 语法
+
 "============= markdown ================
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 Plug 'godlygeek/tabular' "文本对齐, 使用 :Tabularize /= 可以等号对齐多行
@@ -159,12 +163,8 @@ Plugin 'vim-scripts/taglist.vim'
 ActivateAddons vim-snippets ultisnips
 
 
-
 " Turn on syntax highlighting
 syntax on
-
-" For plugins to load correctly
-filetype plugin indent on
 
 
 " Security
@@ -180,8 +180,7 @@ set ruler
 set visualbell
 
 " Encoding
-set encoding=utf-8
-
+" set encoding=utf-8
 "编码设置  
 set enc=utf-8  
 set fencs=utf-8,ucs-bom,shift-jis,gb18030,gbk,gb2312,cp936  
@@ -192,12 +191,9 @@ set langmenu=zh_CN.UTF-8
 " 增强模式中的命令行自动完成操作  
 set wildmenu  
 
-" 为特定文件类型载入相关缩进文件  
-filetype indent on 
-
 " Whitespace
 set wrap
-set textwidth=80
+set textwidth=79
 set formatoptions=tcqrn1
 set tabstop=2
 set shiftwidth=2
@@ -280,26 +276,72 @@ inoremap <C-c> <ESC>
 nnoremap Q <Nop>
 
 " Preferences for various file formats
-autocmd FileType c setlocal noet ts=8 sw=8 tw=80
-autocmd FileType h setlocal noet ts=8 sw=8 tw=80
-autocmd FileType cpp setlocal noet ts=8 sw=8 tw=80
-autocmd FileType s setlocal noet ts=8 sw=8
-autocmd FileType go setlocal noet ts=4 sw=4
-autocmd FileType hy setlocal filetype=lisp
-autocmd FileType sh setlocal noet ts=4 sw=4
-autocmd BufRead,BufNewFile *.js setlocal et ts=2 sw=2
-autocmd FileType html setlocal et ts=2 sw=2
-autocmd FileType htmldjango setlocal et ts=2 sw=2
-autocmd FileType ruby setlocal et ts=2 sw=2
-autocmd FileType scss setlocal et ts=2 sw=2
-autocmd FileType yaml setlocal et ts=2 sw=2
-autocmd FileType markdown setlocal tw=80 et ts=2 sw=2
-autocmd FileType text setlocal tw=80
-autocmd FileType meson setlocal noet ts=2 sw=2
-autocmd FileType bzl setlocal et ts=2 sw=2
-autocmd FileType typescript setlocal et ts=2 sw=2
-autocmd FileType python setlocal et ts=4 sw=4
-autocmd BufNewFile,BufRead *.ms set syntax=python ts=4 sw=4 noet
+" autocmd FileType python setlocal et ts=4 sw=4 tw=79
+
+" Automatically change the current directory
+autocmd BufEnter * silent! lcd %:p:h
+
+" Enable hiden buffers
+set hidden
+
+" File type
+if has("autocmd")
+  autocmd BufNewFile,BufReadPost *.as      set filetype=actionscript
+  autocmd BufNewFile,BufReadPost *.mxml    set filetype=mxml
+  autocmd BufNewFile,BufReadPost *.jsfl    set filetype=javascript
+  autocmd BufNewFile,BufReadPost *.json    set filetype=json
+  autocmd BufNewFile,BufReadPost *.less    set filetype=less
+  autocmd BufNewFile,BufReadPost *.sass    set filetype=sass
+  autocmd BufNewFile,BufReadPost *.scss    set filetype=scss
+  autocmd BufNewFile,BufReadPost *.coffee  set filetype=coffee
+  autocmd BufNewFile,BufReadPost *.ts      set filetype=typescript
+  autocmd BufNewFile,BufReadPost *.jad     set filetype=java
+endif
+
+" File indent
+" sw  - Set shiftwidth  - Indent shifts by # spaces
+" sts - Set softtabstop - Indent tabs by # spaces
+" ts  - Set tabstop     - Indent tabs by # spaces
+" et  - Set expandtab   - Use spaces instead of tabs
+" si  - Set smartindent - File type based indentation
+if has("autocmd")
+  filetype plugin on
+  filetype indent on
+  autocmd FileType apache       setlocal sw=4 sts=4 ts=4 et si
+  autocmd FileType actionscript setlocal sw=4 sts=4 ts=4 et si
+  autocmd FileType c            setlocal sw=4 sts=4 ts=4 et si
+  autocmd FileType cpp          setlocal sw=4 sts=4 ts=4 et si
+  autocmd FileType coffee       setlocal sw=2 sts=2 ts=2 et si
+  autocmd FileType cs           setlocal sw=4 sts=4 ts=4 et si
+  autocmd FileType css          setlocal sw=2 sts=2 ts=2 et si
+  autocmd FileType diff         setlocal sw=4 sts=4 ts=4 et si
+  autocmd FileType html         setlocal sw=4 sts=4 ts=4 et si
+  autocmd FileType java         setlocal sw=4 sts=4 ts=4 noet si
+  autocmd FileType javascript   setlocal sw=2 sts=2 ts=2 et si
+  autocmd FileType json         setlocal sw=2 sts=2 ts=2 et si
+  autocmd FileType less         setlocal sw=2 sts=2 ts=2 et si
+  autocmd FileType lua          setlocal sw=2 sts=2 ts=2 et si
+  autocmd FileType mxml         setlocal sw=4 sts=4 ts=4 et si
+  autocmd FileType perl         setlocal sw=4 sts=4 ts=4 et si
+  autocmd FileType php          setlocal sw=4 sts=4 ts=4 et si
+  autocmd FileType python       setlocal sw=4 sts=4 ts=4 tw=79 et si
+  autocmd FileType ruby         setlocal sw=2 sts=2 ts=2 et si
+  autocmd FileType haml         setlocal sw=2 sts=2 ts=2 et si
+  autocmd FileType sass         setlocal sw=2 sts=2 ts=2 et si
+  autocmd FileType scss         setlocal sw=2 sts=2 ts=2 et si
+  autocmd FileType sh           setlocal sw=2 sts=2 ts=2 et si
+  autocmd FileType sql          setlocal sw=4 sts=4 ts=4 et si
+  autocmd FileType typescript   setlocal sw=4 sts=4 ts=4 et si
+  autocmd FileType vb           setlocal sw=4 sts=4 ts=4 et si
+  autocmd FileType vim          setlocal sw=2 sts=2 ts=2 et si
+  autocmd FileType wsh          setlocal sw=4 sts=4 ts=4 et si
+  autocmd FileType xhtml        setlocal sw=4 sts=4 ts=4 et si
+  autocmd FileType xml          setlocal sw=4 sts=4 ts=4 et si
+  autocmd FileType yaml         setlocal sw=2 sts=2 ts=2 et si
+  autocmd FileType zsh          setlocal sw=2 sts=2 ts=2 et si
+  autocmd FileType scala        setlocal sw=4 sts=4 ts=4 noet si
+endif
+
 
 "==============自定义按键=========================
 "使用 <Space>o 创建一个新文件:
@@ -346,6 +388,17 @@ map <leader>h :noh<CR>
 map <leader>r :call ToggleLineNumber()<CR>
 map <leader>t :NERDTreeToggle<CR>
 map <leader>n :set number<CR>
+
+" Tabs
+nnoremap [t gT
+nnoremap ]t gt
+
+" Buffers
+nnoremap <leader>q :Bdelete<CR>
+nnoremap <Tab> :bn<CR>
+nnoremap <S-Tab> :bp<CR>
+
+
 ```
 综合
 https://github.com/kktt007/archlinux/blob/cdf6a6799750e71dd01f528c44017fe5bd059ad6/vim/_vimrc
