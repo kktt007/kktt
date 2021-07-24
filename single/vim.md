@@ -184,6 +184,8 @@ Plugin 'tpope/vim-rsi'
 
 Plugin 'preservim/vimux'
 
+Plugin 'tpope/vim-obsession'
+
 " Turn on syntax highlighting
 syntax on
 
