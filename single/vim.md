@@ -112,6 +112,8 @@ Plug 'tpope/vim-commentary' " 更好的注释
 " 下面两个插件要配合使用，可以自动生成代码块
 Plug 'SirVer/ultisnips' " 这是代码片段的引擎
 Plug 'honza/vim-snippets' " 配上上面的引擎
+" assuming you want to use snipmate snippet engine
+ActivateAddons vim-snippets snipmate
 
 Plug 'tpope/vim-surround' " 环绕符号成对修改
 Plug 'tpope/vim-repeat' " 重复操作
@@ -177,8 +179,10 @@ Plug 'plasticboy/vim-markdown' " markdkown 增强
 
 Plugin 'vim-scripts/taglist.vim'
 
-ActivateAddons vim-snippets ultisnips
+" tmux needed
+Plugin 'tpope/vim-rsi'
 
+Plugin 'preservim/vimux'
 
 " Turn on syntax highlighting
 syntax on
