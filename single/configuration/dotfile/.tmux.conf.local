@@ -1,0 +1,71 @@
+# https://github.com/topics/tmux
+# 参考https://github.com/statico/dotfiles/blob/main/.tmux.conf
+# git clone https://github.com/erikw/tmux-powerline.git
+# Reload the file with Prefix r.
+unbind r
+bind r source-file ~/.tmux.conf \; display "Reloaded!"
+
+set -g prefix C-space
+
+bind C-Space send-prefix
+
+set -g default-terminal "screen-256color"
+# set -g default-terminal "tmux-256color"
+
+set -g mouse on
+
+# pane navigation use christoomey/vim-tmux-navigator instead of
+#bind -r h select-pane -L  # move left
+#bind -r j select-pane -D  # move down
+#bind -r k select-pane -U  # move up
+#bind -r l select-pane -R  # move right
+#bind > swap-pane -D       # swap current pane with the next one
+#bind < swap-pane -U       # swap current pane with the previous one
+
+# pane resizing
+bind -r H resize-pane -L 2
+bind -r J resize-pane -D 2
+bind -r K resize-pane -U 2
+bind -r L resize-pane -R 2
+
+# create session
+bind C-n new-session
+
+# find session
+bind C-f command-prompt -p find-session 'switch-client -t %%'
+
+# split current window horizontally
+bind - split-window -v
+# split current window vertically
+bind | split-window -h
+
+# on Linux, this requires xsel or xclip
+tmux_conf_copy_to_os_clipboard=true
+
+
+# List of plugins 
+# Use prefix–I install
+# prefix–U update
+# 主题 https://github.com/erikw/tmux-powerline
+# set -g @plugin "arcticicestudio/nord-tmux"
+
+bind C-[ run '~/path/to/tmux-powerline/mute_powerline.sh left'		# Mute left statusbar.
+bind C-] run '~/path/to/tmux-powerline/mute_powerline.sh right'		# Mute right statusbar.
+
+set-option -g status on
+set-option -g status-interval 2
+set-option -g status-justify "centre"
+set-option -g status-left-length 60
+set-option -g status-right-length 90
+set-option -g status-left "#(~/path/to/tmux-powerline/powerline.sh left)"
+set-option -g status-right "#(~/path/to/tmux-powerline/powerline.sh right)"
+
+
+set -g @plugin 'tmux-plugins/tpm'
+set -g @plugin 'tmux-plugins/tmux-sensible'
+set -g @plugin 'christoomey/vim-tmux-navigator'
+
+set -g @plugin 'tmux-plugins/tmux-yank'
+
+# Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
+run '~/.tmux/plugins/tpm/tpm'
