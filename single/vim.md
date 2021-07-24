@@ -1,4 +1,8 @@
 # vim
+
+看看别人的效果
+https://ramezanpour.net/post/2021/04/24/My-ultimate-Neovim-configuration-for-Python-development
+
 Just make sure not to put any line in your vimrc that you don’t understand.
 
 我知道要掌握一个系统，其实看问题就是要系统的看，就是要掌握他的方方面面，一个都不能少。
@@ -116,6 +120,7 @@ Plug 'honza/vim-snippets' " 配上上面的引擎
 ActivateAddons vim-snippets snipmate
 
 Plug 'tpope/vim-surround' " 环绕符号成对修改
+Plug 'ervandew/supertab' "
 Plug 'tpope/vim-repeat' " 重复操作
 Plug 'tpope/vim-unimpaired' " 映射了很多实用的快捷键
 Plug 'terryma/vim-multiple-cursors' " 真正的sublime多光标
@@ -185,6 +190,9 @@ Plugin 'tpope/vim-rsi'
 Plugin 'preservim/vimux'
 
 Plugin 'tpope/vim-obsession'
+
+" python
+" Plugin 'davidhalter/jedi-vim' install archlinux vim-jedi
 
 " Turn on syntax highlighting
 syntax on
