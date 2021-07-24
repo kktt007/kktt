@@ -30,6 +30,14 @@ https://www.cs.ait.ac.th/~on/O/oreilly/unix/sedawk/index/idx_0.htm
 https://eriqande.github.io/eca-bioinf-handbook/sed-awk-and-regular-expressions.html
 ftp://ftp.iingen.unam.mx/Documentacion/Shell-Bash/OReilly%20-%20Sed%20&%20Awk%202nd%20Edition.pdf#page20
 
+https://en.wikipedia.org/wiki/Environment_variable
+
+https://zsh.sourceforge.io/Guide/zshguide.html
+
+对其他东西的了解往往有出其不意的效果
+https://www.gnu.org/software/emacs/manual/html_node/elisp/index.html#SEC_Contents
+
+
 ## book
 https://itsubuntu.com/best-free-unix-ebooks-linux-ebooks/
 
