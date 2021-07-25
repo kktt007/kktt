@@ -3,9 +3,6 @@
 # 参考https://github.com/statico/dotfiles/blob/main/.tmux.conf
 # git clone https://github.com/erikw/tmux-powerline.git
 # Reload the file with Prefix r.
-unbind r
-bind r source-file ~/.tmux.conf \; display "Reloaded!"
-
 set -g prefix C-space
 
 bind C-Space send-prefix
@@ -13,7 +10,20 @@ bind C-Space send-prefix
 set -g default-terminal "screen-256color"
 # set -g default-terminal "tmux-256color"
 
+# set first window to index 1 (not 0) to map more to the keyboard layout
+set-option -g renumber-windows on
+set -g base-index 1
+setw -g pane-base-index 1
+
 set -g mouse on
+
+# copy and paste
+setw -g mode-keys vi
+bind-key -Tcopy-mode-vi v send -X begin-selection
+bind-key -Tcopy-mode-vi y send -X copy-selection
+bind-key -Tcopy-mode-vi Enter send -X copy-selection
+bind-key -Tcopy-mode-vi Escape send -X cancel
+bind-key -Tcopy-mode-vi MouseDragEnd1Pane send -X stop-dragging-selection
 
 # pane navigation use christoomey/vim-tmux-navigator instead of
 #bind -r h select-pane -L  # move left
@@ -40,27 +50,27 @@ bind - split-window -v
 # split current window vertically
 bind | split-window -h
 
-# on Linux, this requires xsel or xclip
-tmux_conf_copy_to_os_clipboard=true
 
-
-# List of plugins 
+# List of plugins
 # Use prefix–I install
 # prefix–U update
+# prefix + alt + u uninstall
 # 主题 https://github.com/erikw/tmux-powerline
-# set -g @plugin "arcticicestudio/nord-tmux"
-
-bind C-[ run '~/path/to/tmux-powerline/mute_powerline.sh left'		# Mute left statusbar.
-bind C-] run '~/path/to/tmux-powerline/mute_powerline.sh right'		# Mute right statusbar.
-
+# set -g @plugin "arcticicestudio/nord-tmux" use above theme
 set-option -g status on
 set-option -g status-interval 2
 set-option -g status-justify "centre"
 set-option -g status-left-length 60
 set-option -g status-right-length 90
-set-option -g status-left "#(~/path/to/tmux-powerline/powerline.sh left)"
-set-option -g status-right "#(~/path/to/tmux-powerline/powerline.sh right)"
+set-option -g status-left "#(~/tmux-powerline/powerline.sh left)"
+set-option -g status-right "#(~/tmux-powerline/powerline.sh right)"
 
+
+bind C-[ run '~/tmux-powerline/mute_powerline.sh left'		# Mute left statusbar.
+bind C-] run '~/tmux-powerline/mute_powerline.sh right'		# Mute right statusbar.
+# tmux source-file ~/.tmux.conf.local
+unbind r
+bind r source-file ~/.tmux.conf.local \; display "Reloaded!"
 
 set -g @plugin 'tmux-plugins/tpm'
 set -g @plugin 'tmux-plugins/tmux-sensible'
