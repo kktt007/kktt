@@ -36,6 +36,7 @@ https://github.com/philgyford/vim-files/blob/main/vimrc
 https://gist.github.com/henriquemenezes/31a477c9ffe2aa5ef5c7
 https://gist.github.com/kozo002/5318149
 
+https://opensourcelibs.com/libs/neovim Plug 'itchyny/lightline.vim'call 
 
 https://gist.github.com/ReggiePuksta/7d679276ec8420012368
 
@@ -91,6 +92,8 @@ set nocp
 " Helps force plugins to load correctly when it is turned back on below
 filetype off
 
+# appearance
+
 " archlinux 先安装 yay nerd-fonts-fira-code,然后安装以下
 Plug 'ryanoasis/vim-devicons' " 图标插件，需要https://github.com/ryanoasis/nerd-fonts
 Plug 'dracula/vim', { 'as': 'dracula' } " 主题插件
@@ -98,34 +101,28 @@ Plug 'vim-airline/vim-airline' " 应该不需要Powerline了
 Plug 'preservim/nerdtree' " 文件管理
 Plug 'preservim/tagbar' " 需要配置,显示文档的层级 切换和跳转到代码中对应的变量和函数的位置 标签导航
 Plug 'Yggdroot/indentLine' " 缩进标尺
-
 Plug 'luochen1990/rainbow' 括号颜色
+
+# 功能
+
 Plug 'easymotion/vim-easymotion' " 跳转
-Plug 'ycm-core/YouCompleteMe' " 参考配置 https://github.com/ycm-core/YouCompleteMe#linux-64-bit 安装相关语言的库
+
+"Plug 'ycm-core/YouCompleteMe' " 参考配置 https://github.com/ycm-core/YouCompleteMe#linux-64-bit 安装相关语言的库
 
 " 模糊查找
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' } "考虑
 
-" 批量注释
-" Plug 'preservim/nerdcommenter'
-" let NERDSpaceDelims = 1   " 在左注释之后/右注释之前留有空格
 
-Plug 'tpope/vim-commentary' " 更好的注释
 
-" 下面两个插件要配合使用，可以自动生成代码块
-Plug 'SirVer/ultisnips' " 这是代码片段的引擎
-Plug 'honza/vim-snippets' " 配上上面的引擎
-" assuming you want to use snipmate snippet engine
-ActivateAddons vim-snippets snipmate
 
 Plug 'tpope/vim-surround' " 环绕符号成对修改
-Plug 'ervandew/supertab' "
+Plug 'ervandew/supertab' 
 Plug 'tpope/vim-repeat' " 重复操作
 Plug 'tpope/vim-unimpaired' " 映射了很多实用的快捷键
 Plug 'terryma/vim-multiple-cursors' " 真正的sublime多光标
-Plug 'dense-analysis/ale'                           " 提示语法错误
-Plug 'easymotion/vim-easymotion'                    " 空格任意跳转
+
+
 Plug 'bronson/vim-visual-star-search'
 Plug 'jiangmiao/auto-pairs'                         " 匹配括号
 Plug 'dhruvasagar/vim-table-mode'                   " 自动表格, 使用`\tm` 就进入了表格模式, 会进行自动对齐
@@ -163,11 +160,42 @@ Plug 'mattn/vim-lsp-settings'
 Plug 'prabirshrestha/async.vim'
 
 
-Plugin 'godlygeek/tabular' " 对齐插件,我最喜欢的
-
-Plugin 'scrooloose/syntastic' " 语法检查
+# ide
+Plug 'dense-analysis/ale'                           " 提示语法
 
 Plug 'vim-syntastic/syntastic' " 语法
+
+Plug 'tpope/vim-commentary' " 更好的注释
+
+" 下面两个插件要配合使用，可以自动生成代码块
+Plug 'SirVer/ultisnips' " 这是代码片段的引擎
+Plug 'honza/vim-snippets' " 配上上面的引擎
+" assuming you want to use snipmate snippet engine
+ActivateAddons vim-snippets snipmate
+
+"git
+https://github.com/airblade
+
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+" GoTo code navigation.
+nmap <leader>gd <Plug>(coc-definition)
+nmap <leader>gy <Plug>(coc-type-definition)
+nmap <leader>gi <Plug>(coc-implementation)
+nmap <leader>gr <Plug>(coc-references)
+nmap <leader>rr <Plug>(coc-rename)
+nmap <leader>g[ <Plug>(coc-diagnostic-prev)
+nmap <leader>g] <Plug>(coc-diagnostic-next)
+nmap <silent> <leader>gp <Plug>(coc-diagnostic-prev-error)
+nmap <silent> <leader>gn <Plug>(coc-diagnostic-next-error)
+nnoremap <leader>cr :CocRestart
+
+" Syntax highlighting
+Plug 'dense-analysis/ale'
+
+" Tabs
+Plug 'ap/vim-buftabline'
+
 
 "============= markdown ================
 Plug 'instant-markdown/vim-instant-markdown', {'for': 'markdown', 'do': 'yarn install'}
