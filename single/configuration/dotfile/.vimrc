@@ -50,9 +50,10 @@ Plug 'dense-analysis/ale'
 " markdown
 Plug 'dhruvasagar/vim-table-mode' " 自动表格, 使用`\tm` 就进入了表格模式, 会进行自动对齐
 Plug 'instant-markdown/vim-instant-markdown', {'for': 'markdown', 'do': 'yarn install'}
+" 先用上面的
+" Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
-
+" 格式化包括markdown
 Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install',
   \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'svelte', 'yaml', 'html'] }
