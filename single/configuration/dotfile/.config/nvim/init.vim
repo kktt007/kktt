@@ -7,6 +7,7 @@
 "  python3 -m pip install --user --upgrade pynvim
 " gem install neovim
 " yarn global add neovim
+" npm -g install instant-markdown-d  or yarn global add instant-markdown-d(bug)
 let g:python3_host_prog = '/usr/bin/python3'
 let g:ruby_host_prog = '~/.local/share/gem/ruby/3.0.0/bin/neovim-ruby-host'
 let g:loaded_perl_provider = 0
@@ -433,5 +434,7 @@ map <Leader>vi :VimuxInspectRunner<CR>
 map <leader>vz :VimuxZoomRunner<CR>
 
 "==============vim-instant-markdown=====================
+let g:instant_markdown_autostart = 0
+let g:instant_markdown_open_to_the_world = 1
 nmap <F8> :InstantMarkdownPreview<CR>
 nmap <F9> :InstantMarkdownStop<CR>
