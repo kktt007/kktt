@@ -136,7 +136,7 @@ st
 
 ## 工具
 
-- sudo pacman -S python python-pip
+- sudo pacman -S python python-pip python-pipenv
 
 yay：
 
