@@ -17,6 +17,7 @@ Plug 'jiangmiao/auto-pairs' " 自动成对括号 类似Plugin 'Raimondi/delimitM
 Plug 'tpope/vim-repeat' " 重复操作
 Plug 'ervandew/supertab' " tab键可以飞起来
 Plug 'tpope/vim-unimpaired' " 一些不错的配置，可以让[]发挥奇效
+Plug 'sjl/gundo.vim' " 显示历史记录和代码回滚
 
 " 显示、主题
 Plug 'ryanoasis/vim-devicons' " 图标插件
@@ -135,6 +136,16 @@ set showmode
 
 "设置显示标签栏
 set showtabline=2
+
+" menu and bottom messy code菜单乱码
+source $VIMRUNTIME/delmenu.vim
+source $VIMRUNTIME/menu.vim
+if s:windows
+    language messages en_US.utf-8
+endif
+
+" 不备份
+set nobackup
 
 " 比如，键入的指令是2y3d，那么底部就会显示2y3，当键入d的时候，操作完成，显示消失
 set showcmd
@@ -396,3 +407,5 @@ let g:tagbar_width = 25
 " 自动打开 Tagbar 插件
 autocmd BufReadPost *.cpp,*.c,*.h,*.cc,*.cxx call tagbar#autoopen()
 
+"======================gundo===========================
+nnoremap <F5> :GundoToggle<CR>
