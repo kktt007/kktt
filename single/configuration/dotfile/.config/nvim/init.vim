@@ -432,7 +432,6 @@ map <Leader>vi :VimuxInspectRunner<CR>
 " Zoom the tmux runner pane
 map <leader>vz :VimuxZoomRunner<CR>
 
-"==============iamcco/markdown-preview=====================
-nmap <C-s> <Plug>MarkdownPreview
-nmap <M-s> <Plug>MarkdownPreviewStop
-nmap <C-p> <Plug>MarkdownPreviewToggle
+"==============vim-instant-markdown=====================
+nmap <F8> :InstantMarkdownPreview<CR>
+nmap <F9> :InstantMarkdownStop<CR>
