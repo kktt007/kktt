@@ -409,3 +409,18 @@ autocmd BufReadPost *.cpp,*.c,*.h,*.cc,*.cxx call tagbar#autoopen()
 
 "======================gundo===========================
 nnoremap <F5> :GundoToggle<CR>
+
+" ====================vimux===============================
+" Prompt for a command to run
+map <Leader>vp :VimuxPromptCommand<CR>
+" Run last command executed by VimuxRunCommand
+map <Leader>vl :VimuxRunLastCommand<CR>
+" Inspect runner pane
+map <Leader>vi :VimuxInspectRunner<CR>
+" Zoom the tmux runner pane
+<leader>vz :VimuxZoomRunner<CR>
+
+"==============iamcco/markdown-preview=====================
+nmap <C-s> <Plug>MarkdownPreview
+nmap <M-s> <Plug>MarkdownPreviewStop
+nmap <C-p> <Plug>MarkdownPreviewToggle
