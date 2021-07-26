@@ -1,5 +1,83 @@
-" 参考 http://vimdoc.sourceforge.net/htmldoc/options.html
+" 参考 https://vim.fandom.com/wiki/Use_Vim_like_an_IDE
 
+" 文件管理
+Plug 'preservim/nerdtree'
+Plug 'qpkorr/vim-renamer'       " 批量修改文件
+
+" 注释
+Plug 'tpope/vim-commentary'
+
+" 编辑
+Plug 'easymotion/vim-easymotion' " 跳转
+Plug 'tpope/vim-surround' " 环绕符号,需要vhwo
+Plug 'jiangmiao/auto-pairs' " 自动成对括号 类似Plugin 'Raimondi/delimitMate' 
+Plug 'tpope/vim-repeat' " 重复操作
+Plug 'ervandew/supertab' " tab键可以飞起来
+Plug 'tpope/vim-unimpaired' " 一些不错的配置，可以让[]发挥奇效
+
+" 显示、主题
+Plug 'ryanoasis/vim-devicons' " 图标插件
+Plug 'dracula/vim', { 'as': 'dracula' } " 主题插件
+Plug 'vim-airline/vim-airline' " 状态栏 类似Plug 'itchyny/lightline.vim' 
+Plug 'luochen1990/rainbow' 括号颜色
+Plug 'Yggdroot/indentLine' " 缩进标尺
+
+" 查找
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'yuki-yano/fzf-preview.vim', { 'branch': 'release/rpc' }
+
+" 格式
+Plug 'godlygeek/tabular' "文本对齐
+Plugin 'sbdchd/neoformat' "  formatting code
+Plug 'junegunn/vim-easy-align' " 对齐
+
+" git
+Plug 'tpope/vim-fugitive' " git 插件
+Plug 'vim-gitgutter' " 显示git变化
+
+" 自动完成 =============coc======================
+查看 :CocInfo
+" 安装插件:CocInstall coc-git coc-fzf-preview
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+" 语法检查
+Plug 'dense-analysis/ale' 
+
+" markdown
+Plug 'dhruvasagar/vim-table-mode' " 自动表格, 使用`\tm` 就进入了表格模式, 会进行自动对齐
+Plug 'instant-markdown/vim-instant-markdown', {'for': 'markdown', 'do': 'yarn install'}
+
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
+
+Plug 'prettier/vim-prettier', {
+  \ 'do': 'yarn install',
+  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'svelte', 'yaml', 'html'] }
+
+Plug 'plasticboy/vim-markdown' " markdkown 增强
+
+" python
+" Plugin 'davidhalter/jedi-vim' " need install archlinux vim-jedi
+
+" 代码片段
+" 下面两个插件要配合使用，可以自动生成代码块
+Plug 'SirVer/ultisnips' " 这是代码片段的引擎
+Plug 'honza/vim-snippets' " 配上上面的引擎
+" assuming you want to use snipmate snippet engine
+ActivateAddons vim-snippets ultisnips
+
+" tag相关 安装cscope(类似ctags) tagbar类似（taglist）
+Plug 'preservim/tagbar' " 需要配置,显示文档的层级 切换和跳转到代码中对应的变量和函数的位置 标签导航
+
+" tmux needed
+Plugin 'tpope/vim-rsi'
+
+Plugin 'preservim/vimux'
+
+Plugin 'tpope/vim-obsession'
+
+
+" =================================配置==============================================
+" 参考 http://vimdoc.sourceforge.net/htmldoc/options.html
 " 不与 Vi 兼容（采用 Vim 自己的操作命令）
 set nocp
 
@@ -148,6 +226,10 @@ endif
 " 共享剪贴板 Using only unnamedplus on Linux
 set clipboard+=unnamedplus
 
+"配色方案
+set background=dark
+colorscheme dracula
+
 " File type
 if has("autocmd")
   autocmd BufNewFile,BufReadPost *.as      set filetype=actionscript
@@ -246,7 +328,7 @@ nmap <Leader>M %
 " 使用 <Space><Space> 进入 Vim 编辑模式：
 nmap <Leader><Leader> V
 
-" 自定义开关
+" ==============自定义快捷========================
 map <leader>h :noh<CR>
 map <leader>r :call ToggleLineNumber()<CR>
 map <leader>t :NERDTreeToggle<CR>
@@ -259,14 +341,11 @@ nnoremap <S-Tab> :bp<CR>
 
 
 
-"配色方案
-set background=dark
-colorscheme dracula
 
-" 插件
 
-"按F5运行python"
-"=====================================================
+" ==============插件配置=========================
+
+" ======================python=======================
 map <F5> :Autopep8<CR> :w<CR> :call RunPython()<CR>
 function RunPython()
     let mp = &makeprg
@@ -280,8 +359,8 @@ function RunPython()
     let &errorformat = ef
 endfunction
 
-" NERDTree 配置
-"=====================================================
+
+" ===================NERDTree 配置=====================
 let NERDTreeChDirMode=1
 "显示书签"
 let NERDTreeShowBookmarks=1
@@ -291,3 +370,16 @@ let NERDTreeIgnore=['\~$', '\.pyc$', '\.swp$','\.pyo$', '__pycache__$']
 let NERDTreeWinSize=40
 "按 F2 开启和关闭目录树"
 map <F2> :NERDTreeToggle<CR>
+
+"=======================coc===========================
+" GoTo code navigation.
+nmap <leader>gd <Plug>(coc-definition)
+nmap <leader>gy <Plug>(coc-type-definition)
+nmap <leader>gi <Plug>(coc-implementation)
+nmap <leader>gr <Plug>(coc-references)
+nmap <leader>rr <Plug>(coc-rename)
+nmap <leader>g[ <Plug>(coc-diagnostic-prev)
+nmap <leader>g] <Plug>(coc-diagnostic-next)
+nmap <silent> <leader>gp <Plug>(coc-diagnostic-prev-error)
+nmap <silent> <leader>gn <Plug>(coc-diagnostic-next-error)
+nnoremap <leader>cr :CocRestart
