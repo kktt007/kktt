@@ -31,7 +31,8 @@ Plug 'sjl/gundo.vim' " 显示历史记录和代码回滚
 " 显示、主题
 Plug 'ryanoasis/vim-devicons' " 图标插件
 Plug 'dracula/vim', { 'as': 'dracula' } " 主题插件
-Plug 'vim-airline/vim-airline' " 状态栏 类似Plug 'itchyny/lightline.vim' 
+Plug 'vim-airline/vim-airline' " 状态栏 类似Plug 'itchyny/lightline.vim'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'luochen1990/rainbow' " 括号颜色
 Plug 'Yggdroot/indentLine' " 缩进标尺
 
@@ -255,6 +256,7 @@ set clipboard+=unnamedplus
 "配色方案
 set background=dark
 colorscheme dracula
+let g:airline_theme='dracula'
 
 " File type
 if has("autocmd")
