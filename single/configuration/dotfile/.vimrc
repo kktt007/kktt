@@ -383,3 +383,11 @@ nmap <leader>g] <Plug>(coc-diagnostic-next)
 nmap <silent> <leader>gp <Plug>(coc-diagnostic-prev-error)
 nmap <silent> <leader>gn <Plug>(coc-diagnostic-next-error)
 nnoremap <leader>cr :CocRestart
+
+"===================tagbar==============================
+"	Tagbar
+map <F3> :TagbarToggle<CR> "将Tagbar映射到F3
+let g:tagbar_width = 25
+" 自动打开 Tagbar 插件
+autocmd BufReadPost *.cpp,*.c,*.h,*.cc,*.cxx call tagbar#autoopen()
+
