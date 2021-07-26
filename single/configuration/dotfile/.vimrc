@@ -1,5 +1,8 @@
 " 参考 https://vim.fandom.com/wiki/Use_Vim_like_an_IDE
+" sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
+call plug#begin('~/.vim/plugged')
 " 文件管理
 Plug 'preservim/nerdtree'
 Plug 'qpkorr/vim-renamer'       " 批量修改文件
@@ -56,7 +59,7 @@ Plug 'prettier/vim-prettier', {
 Plug 'plasticboy/vim-markdown' " markdkown 增强
 
 " python
-" Plugin 'davidhalter/jedi-vim' " need install archlinux vim-jedi
+" Plug 'davidhalter/jedi-vim' " need install archlinux vim-jedi
 
 " 代码片段
 " 下面两个插件要配合使用，可以自动生成代码块
@@ -69,12 +72,14 @@ ActivateAddons vim-snippets ultisnips
 Plug 'preservim/tagbar' " 需要配置,显示文档的层级 切换和跳转到代码中对应的变量和函数的位置 标签导航
 
 " tmux needed
-Plugin 'tpope/vim-rsi'
+Plug 'tpope/vim-rsi'
 
-Plugin 'preservim/vimux'
+Plug 'preservim/vimux'
 
-Plugin 'tpope/vim-obsession'
+Plug 'tpope/vim-obsession'
 
+Plug 'christoomey/vim-tmux-navigator'
+call plug#end()
 
 " =================================配置==============================================
 " 参考 http://vimdoc.sourceforge.net/htmldoc/options.html
