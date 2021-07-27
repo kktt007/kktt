@@ -39,6 +39,7 @@ Plug 'Yggdroot/indentLine' " 缩进标尺
 
 " 查找
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 Plug 'yuki-yano/fzf-preview.vim', { 'branch': 'release/rpc' }
 
 " 格式
@@ -232,6 +233,8 @@ set noshiftround
 set autoindent
 
 " 如果行尾有多余的空格（包括 Tab 键），该配置将让这些空格显示成可见的小方块。
+" use plasticboy/vim-markdown
+" set lcs=trail:■,eol:¬
 set lcs=tab:»\|,trail:■,eol:¬
 set list
 
@@ -428,8 +431,8 @@ nnoremap <space>e :CocCommand explorer<CR>
 
 
 "===================tagbar==============================
-"	Tagbar
-map <F3> :TagbarToggle<CR> "将Tagbar映射到F3
+"将Tagbar映射到F8
+nmap <F8> :TagbarToggle<CR>
 let g:tagbar_width = 25
 " 自动打开 Tagbar 插件
 autocmd BufReadPost *.cpp,*.c,*.h,*.cc,*.cxx call tagbar#autoopen()
@@ -452,3 +455,19 @@ let g:instant_markdown_autostart = 0
 let g:instant_markdown_open_to_the_world = 1
 nmap <leader>mp :InstantMarkdownPreview<CR>
 nmap <leader>ms ::InstantMarkdownStop<CR>
+
+" ===============indentLine===============================
+" https://jonasjacek.github.io/colors/ 
+" Vim
+let g:indentLine_color_term = 239
+
+" GVim
+let g:indentLine_color_gui = '#A4E57E'
+
+" none X terminal
+let g:indentLine_color_tty_light = 7 " (default: 4)
+let g:indentLine_color_dark = 1 " (default: 2)
+
+" Background (Vim, GVim)
+let g:indentLine_bgcolor_term = 242
+let g:indentLine_char_list = ['|', '¦', '┆', '┊']
