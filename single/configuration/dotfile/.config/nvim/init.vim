@@ -357,6 +357,12 @@ nmap <Leader>M %
 " 使用 <Space><Space> 进入 Vim 编辑模式：
 nmap <Leader><Leader> V
 
+" 光标竖直
+set gcr=i-ci:ver30-iCursor-blinkwait300-blinkon200-blinkoff150
+
+" makrdown延迟解决
+set updatetime=2000
+
 " ==============自定义快捷========================
 map <leader>h :noh<CR>
 map <leader>r :call ToggleLineNumber()<CR>
@@ -401,17 +407,22 @@ let NERDTreeWinSize=40
 map <F2> :NERDTreeToggle<CR>
 
 "=======================coc===========================
+let g:coc_user_config = {}
+let g:coc_global_extensions = ['coc-pyright', 'coc-pairs']
 " GoTo code navigation.
 nmap <leader>gd <Plug>(coc-definition)
 nmap <leader>gy <Plug>(coc-type-definition)
 nmap <leader>gi <Plug>(coc-implementation)
 nmap <leader>gr <Plug>(coc-references)
-nmap <leader>rr <Plug>(coc-rename)
+nmap <leader>rn <Plug>(coc-rename)
 nmap <leader>g[ <Plug>(coc-diagnostic-prev)
 nmap <leader>g] <Plug>(coc-diagnostic-next)
 nmap <silent> <leader>gp <Plug>(coc-diagnostic-prev-error)
 nmap <silent> <leader>gn <Plug>(coc-diagnostic-next-error)
 nnoremap <leader>cr :CocRestart
+" Formatting selected code.
+xmap <leader>f  <Plug>(coc-format-selected)
+nmap <leader>f  <Plug>(coc-format-selected)
 
 "===================tagbar==============================
 "	Tagbar
@@ -436,5 +447,5 @@ map <leader>vz :VimuxZoomRunner<CR>
 "==============vim-instant-markdown=====================
 let g:instant_markdown_autostart = 0
 let g:instant_markdown_open_to_the_world = 1
-nmap <F8> :InstantMarkdownPreview<CR>
-nmap <F9> :InstantMarkdownStop<CR>
+nmap <leader>mp :InstantMarkdownPreview<CR>
+nmap <leader>ms ::InstantMarkdownStop<CR>
