@@ -1,9 +1,7 @@
+"todo
+"https://github.com/rperryng/dotfiles/blob/master/vimrc
 
-todo
-https://github.com/rperryng/dotfiles/blob/master/vimrc
-
-https://github.com/ClausewitzCPU0/VimTutorial
-
+"https://github.com/ClausewitzCPU0/VimTutorial
 
 " 参考 https://vim.fandom.com/wiki/Use_Vim_like_an_IDE
 " sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
@@ -31,7 +29,7 @@ Plug 'tpope/vim-commentary'
 " 编辑
 Plug 'easymotion/vim-easymotion' " 跳转
 Plug 'tpope/vim-surround' " 环绕符号,需要vhwo
-Plug 'jiangmiao/auto-pairs' " 自动成对括号 类似Plugin 'Raimondi/delimitMate' 
+Plug 'jiangmiao/auto-pairs' " 自动成对括号 类似Plugin 'Raimondi/delimitMate'
 Plug 'tpope/vim-repeat' " 重复操作
 Plug 'ervandew/supertab' " tab键可以飞起来
 Plug 'tpope/vim-unimpaired' " 一些不错的配置，可以让[]发挥奇效
@@ -43,8 +41,8 @@ Plug 'dracula/vim', { 'as': 'dracula' } " 主题插件
 Plug 'vim-airline/vim-airline' " 状态栏 类似Plug 'itchyny/lightline.vim'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'luochen1990/rainbow' " 括号颜色
-Plug 'Yggdroot/indentLine' " 缩进标尺
-Plug 'lukas-reineke/indent-blankline.nvim' 
+" Plug 'Yggdroot/indentLine' " 缩进标尺
+Plug 'lukas-reineke/indent-blankline.nvim'
 
 " 查找
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -66,7 +64,7 @@ Plug 'airblade/vim-gitgutter' " 显示git变化
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " 语法检查
-Plug 'dense-analysis/ale' 
+Plug 'dense-analysis/ale'
 
 " markdown
 Plug 'dhruvasagar/vim-table-mode' " 自动表格, 使用`\tm` 就进入了表格模式, 会进行自动对齐
@@ -157,7 +155,7 @@ set undofile
 set enc=utf-8
 set fencs=utf-8,ucs-bom,shift-jis,gb18030,gbk,gb2312,cp936
 
-" 增强模式中的命令行自动完成操作  
+" 增强模式中的命令行自动完成操作
 set wildmenu
 set wildmode=longest:list,full
 
@@ -204,11 +202,11 @@ set showmatch
 " Status bar 是否显示状态栏。0 表示不显示，1 表示只在多窗口时显示，2 表示显示
 set laststatus=2
 
-" 带有如下符号的单词不要被换行分割  
-set iskeyword+=_,$,@,%,#,-  
+" 带有如下符号的单词不要被换行分割
+set iskeyword+=_,$,@,%,#,-
 
-" 在被分割的窗口间显示空白，便于阅读  
-set fillchars=vert:\ ,stl:\ ,stlnc:\ 
+" 在被分割的窗口间显示空白，便于阅读
+set fillchars=vert:\ ,stl:\ ,stlnc:\
 
 " Allow hidden buffers
 set hidden
@@ -481,7 +479,7 @@ nmap <leader>mp :InstantMarkdownPreview<CR>
 nmap <leader>ms ::InstantMarkdownStop<CR>
 
 " ===============indentLine===============================
-" https://jonasjacek.github.io/colors/ 
+" https://jonasjacek.github.io/colors/
 " Vim
 let g:indentLine_color_term = 239
 
@@ -493,8 +491,9 @@ let g:indentLine_color_tty_light = 7 " (default: 4)
 let g:indentLine_color_dark = 1 " (default: 2)
 
 " Background (Vim, GVim)
-let g:indentLine_bgcolor_term = 242
+"let g:indentLine_bgcolor_term = 242
+let g:indent_blankline_char = '|'
 let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 
-=========indent-blankline.nvim================
-let g:indent_blankline_char_highlight_list
+" =========indent-blankline.nvim================
+let g:indent_blankline_space_char_blankline_highlight_list = ['Error', 'Function']
