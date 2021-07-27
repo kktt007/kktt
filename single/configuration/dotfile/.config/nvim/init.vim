@@ -233,10 +233,11 @@ set noshiftround
 set autoindent
 
 " 如果行尾有多余的空格（包括 Tab 键），该配置将让这些空格显示成可见的小方块。
-" use plasticboy/vim-markdown
-" set lcs=trail:■,eol:¬
-set lcs=tab:»\|,trail:■,eol:¬
+" use plasticboy/vim-markdown tab用这个
+" set lcs=tab:→\ ,eol:¬,nbsp:¬,trail:■,extends:❯,precedes:❮,space:·
 set list
+set lcs=eol:¬,nbsp:¬,trail:■,extends:❯,precedes:❮,space:·
+set showbreak=↪
 
 " 显示光标所在的当前行的行号，其他行都为相对于该行的相对行号
 set relativenumber
@@ -364,7 +365,7 @@ nmap <Leader><Leader> V
 set gcr=i-ci:ver30-iCursor-blinkwait300-blinkon200-blinkoff150
 
 " makrdown延迟解决
-set updatetime=2000
+set updatetime=1000
 
 " ==============自定义快捷========================
 map <leader>h :noh<CR>
