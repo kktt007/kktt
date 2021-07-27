@@ -4,19 +4,6 @@ https://github.com/rperryng/dotfiles/blob/master/vimrc
 
 https://github.com/ClausewitzCPU0/VimTutorial
 
-Plug 'lukas-reineke/indent-blankline.nvim'
-Plug 'vimwiki/vimwiki'
-Plug 'airblade/vim-rooter'
-Plug 'tmux-plugins/vim-tmux-focus-events'
-Plug 'wincent/terminus'
-Plug 'kyazdani42/nvim-web-devicons'
-Plug 'romgrk/barbar.nvim'
-Plug 'tpope/vim-endwise'
-psliwka/vim-smoothie
-tmhedberg/SimpylFold
-diffview.nvimts/diffview.nvim
-nvim-treesitter/nvim-treesitter
-disable no conceal for neovim
 
 " 参考 https://vim.fandom.com/wiki/Use_Vim_like_an_IDE
 " sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
@@ -36,6 +23,7 @@ call plug#begin('~/.vim/plugged')
 " 文件管理
 Plug 'preservim/nerdtree'
 Plug 'qpkorr/vim-renamer'       " 批量修改文件
+Plug 'airblade/vim-rooter'
 
 " 注释
 Plug 'tpope/vim-commentary'
@@ -56,6 +44,7 @@ Plug 'vim-airline/vim-airline' " 状态栏 类似Plug 'itchyny/lightline.vim'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'luochen1990/rainbow' " 括号颜色
 Plug 'Yggdroot/indentLine' " 缩进标尺
+Plug 'lukas-reineke/indent-blankline.nvim' 
 
 " 查找
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -113,6 +102,20 @@ Plug 'preservim/vimux'
 Plug 'tpope/vim-obsession'
 
 Plug 'christoomey/vim-tmux-navigator'
+
+Plug 'tmux-plugins/vim-tmux-focus-events'
+
+" others
+
+Plug 'vimwiki/vimwiki'
+
+Plug 'wincent/terminus'
+
+Plug 'tpope/vim-endwise'
+
+Plug 'psliwka/vim-smoothie'
+
+" nvim-treesitter/nvim-treesitter
 call plug#end()
 
 " =================================配置==============================================
@@ -492,3 +495,6 @@ let g:indentLine_color_dark = 1 " (default: 2)
 " Background (Vim, GVim)
 let g:indentLine_bgcolor_term = 242
 let g:indentLine_char_list = ['|', '¦', '┆', '┊']
+
+=========indent-blankline.nvim================
+let g:indent_blankline_char_highlight_list
