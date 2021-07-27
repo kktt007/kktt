@@ -1,3 +1,23 @@
+
+todo
+https://github.com/rperryng/dotfiles/blob/master/vimrc
+
+https://github.com/ClausewitzCPU0/VimTutorial
+
+Plug 'lukas-reineke/indent-blankline.nvim'
+Plug 'vimwiki/vimwiki'
+Plug 'airblade/vim-rooter'
+Plug 'tmux-plugins/vim-tmux-focus-events'
+Plug 'wincent/terminus'
+Plug 'kyazdani42/nvim-web-devicons'
+Plug 'romgrk/barbar.nvim'
+Plug 'tpope/vim-endwise'
+psliwka/vim-smoothie
+tmhedberg/SimpylFold
+diffview.nvimts/diffview.nvim
+nvim-treesitter/nvim-treesitter
+disable no conceal for neovim
+
 " 参考 https://vim.fandom.com/wiki/Use_Vim_like_an_IDE
 " sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
 "       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
