@@ -5,7 +5,7 @@
 " PlugInstall PlugUpdate PlugUpgrade PlugStatus
 " https://neovim.io/doc/user/provider.html
 "  python3 -m pip install --user --upgrade pynvim
-" gem install neovim
+" gem install neovim solargraph(for ruby)
 " yarn global add neovim
 " npm -g install instant-markdown-d  or yarn global add instant-markdown-d(bug)
 let g:python3_host_prog = '/usr/bin/python3'
@@ -408,7 +408,7 @@ map <F2> :NERDTreeToggle<CR>
 
 "=======================coc===========================
 let g:coc_user_config = {}
-let g:coc_global_extensions = ['coc-pyright', 'coc-pairs']
+let g:coc_global_extensions = ['coc-pyright', 'coc-lists', 'coc-solargraph', 'coc-explorer', 'coc-snippets', 'coc-git']
 " GoTo code navigation.
 nmap <leader>gd <Plug>(coc-definition)
 nmap <leader>gy <Plug>(coc-type-definition)
@@ -423,6 +423,9 @@ nnoremap <leader>cr :CocRestart
 " Formatting selected code.
 xmap <leader>f  <Plug>(coc-format-selected)
 nmap <leader>f  <Plug>(coc-format-selected)
+" ============coc-explorer==================
+nnoremap <space>e :CocCommand explorer<CR>
+
 
 "===================tagbar==============================
 "	Tagbar
