@@ -268,7 +268,9 @@ set winaltkeys=no
 
 " 光标所在的当前行高亮
 set cursorline
-
+" set highlight Cursor guifg=white
+set highlight Cursor gui=reverse guifg=NONE guibg=NONE
+" set highlight Cursor gui=NONE guifg=bg guibg=fg
 " 鼠标支持
 if has('mouse')
     set mouse=a
@@ -280,7 +282,7 @@ endif
 set clipboard+=unnamedplus
 
 "配色方案
-set background=dark
+" set background=dark
 colorscheme dracula
 let g:airline_theme='dracula'
 
