@@ -269,6 +269,8 @@ set winaltkeys=no
 " 光标所在的当前行高亮
 set cursorline
 " set highlight Cursor guifg=white
+" https://github.com/dracula/vim/issues/192
+" https://vimhelp.org/options.txt.html#%27guicursor%27
 set highlight Cursor gui=reverse guifg=NONE guibg=NONE
 " set highlight Cursor gui=NONE guifg=bg guibg=fg
 " 鼠标支持
