@@ -98,9 +98,11 @@ URxvt.cutchars:                 '"()*,<>[]{}|\''
 
 
 URxvt*depth: 32
-!urxvt*background:  #3f3f3f
-!urxvt*foreground:  #dcdccc
-!URxvt*cursorColor: #aaaaaa
+*.foreground: #F8F8F2
+*.background: #282A36
+*.cursorColor:  #1ABC9C
+*fading: 30
+*fadeColor: #1D97F0
 !URxvt*colorUL: yellow
 !URxvt*underlineColor: #4682B4
 
