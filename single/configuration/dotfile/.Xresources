@@ -1,3 +1,19 @@
+参考
+https://github.com/dracula/xresources/blob/master/Xresources
+https://github.com/arcticicestudio/nord-xresources/blob/develop/src/nord
+https://github.com/jef/forest-night-xresources/blob/master/forest-night
+https://github.com/siduck76/dotfiles/blob/master/thinkpad/.Xresources
+https://github.com/baskerville/etc-linux/blob/master/Xresources
+https://wiki.archlinux.org/title/Rofi
+https://github.com/rubik/dotfiles/blob/master/.Xresources
+
+set -g @plugin 'dracula/tmux'
+
+# Set 256 colors
+set -s default-terminal 'tmux-256color'
+https://raw.githubusercontent.com/romkatv/powerlevel10k-media/master/MesloLGS%20NF%20Regular.ttf
+https://gist.github.com/andrenbrandao/701dc935b45666791183eb0948921bb7?ref=hackernoon.com
+
 https://linux.die.net/man/1/urxvt
 
 https://wiki.archlinux.org/title/Rxvt-unicode
