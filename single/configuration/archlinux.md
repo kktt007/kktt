@@ -58,7 +58,7 @@ pacman -S dosfstools grub efibootmgr os-prober
 
 intel-ucode
 
-xorg-server xorg-server-common xorg-xrandr arandr
+xorg-server xorg-server-common xorg-xrandr arandr xorg-xrdb xorg-xmodmap xkeycaps
 
 qt kf5 kf5-aids plasma sddm packagekit-qt5
 
