@@ -18,6 +18,11 @@ https://docs.python.org/3/tutorial/interpreter.html
 
 https://www.aliyundrive.com/drive/folder/60f30be43c02d2fcfd9446e0abc327918f9be990
 
+https://eastlakeside.gitbook.io/interpy-zh/
+https://github.com/Prodesire/Python-Guide-CN
+https://github.com/521xueweihan/HelloGitHub/blob/master/content/02/HelloGitHub02.md#Python-%E9%A1%B9%E7%9B%AE
+https://github.com/skywind3000/awesome-cheatsheets/blob/master/languages/python.md
+
 
 ## 
 [Python print()](https://www.programiz.com/python-programming/methods/built-in/print)
