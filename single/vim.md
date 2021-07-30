@@ -1,5 +1,12 @@
 # vim
 
+vim script
+https://codingwithfun.com/p/vi-vim-command/
+https://learnvim.irian.to/vimscript/vimscript_basic_data_types
+https://developer.ibm.com/articles/l-vim-script-1/
+https://github.com/iggredible/Learn-Vim
+https://github.com/skywind3000/awesome-cheatsheets/blob/master/languages/vimscript.md
+
 看看别人的效果
 https://ramezanpour.net/post/2021/04/24/My-ultimate-Neovim-configuration-for-Python-development
 
