@@ -11,6 +11,8 @@ https://www.linuxtopia.org/online_books/index.html
 
 https://www.linux.com/training-tutorials/
 
+https://linuxtools-rst.readthedocs.io/zh_CN/latest/
+
 ## basic
 
 http://www.ee.surrey.ac.uk/Teaching/Unix/index.html
