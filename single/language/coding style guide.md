@@ -22,6 +22,16 @@ https://github.com/charlie-wong/coding-style
 
 https://google.github.io/styleguide/shellguide.html#s4-comments
 
+[🖌️ BASH Style Guide - 🎨 BASH Style Guide (my 2¢)](https://styles.sh/)
+
+[progrium/bashstyle: Let's do Bash right!](https://github.com/progrium/bashstyle)
+
+[azet/community_bash_style_guide](https://github.com/azet/community_bash_style_guide)
+
+[icy/bash-coding-style: A Bash coding style](https://github.com/icy/bash-coding-style)
+
+[Vertical bar - formulasearchengine](https://en.formulasearchengine.com/wiki/Vertical_bar)
+
 ## ruby
 
 - # Use one space between the leading # character of the comment and the text of the comment.
@@ -67,6 +77,7 @@ https://www.kernel.org/doc/html/v4.10/process/coding-style.html#commenting
 https://google.github.io/styleguide/cppguide.html#Comments
 
 ## python
+[PEP 8 -- Style Guide for Python Code | Python.org](https://www.python.org/dev/peps/pep-0008/)
 
 https://github.com/google/styleguide/blob/gh-pages/pyguide.md
 
