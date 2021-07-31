@@ -110,7 +110,19 @@ https://similargo.com/site/compciv.org
 
 http://www.compciv.org/bash-guide/
 
+[The Unix Shell](https://swcarpentry.github.io/shell-novice/)
 
+[Shell & Utilities](https://pubs.opengroup.org/onlinepubs/9699919799/utilities/contents.html)
+
+[1. 学会使用命令帮助 — Linux Tools Quick Tutorial](https://linuxtools-rst.readthedocs.io/zh_CN/latest/base/01_use_man.html)
+
+[BashSheet - Greg's Wiki](https://mywiki.wooledge.org/BashSheet)
+
+[The Bash Hackers Wiki [Bash Hackers Wiki]](https://wiki.bash-hackers.org/start)
+
+[Command-line interface - Wikipedia](https://en.wikipedia.org/wiki/Command-line_interface)
+
+[Vertical bar - formulasearchengine](https://en.formulasearchengine.com/wiki/Vertical_bar)
 ---
 
 exercise
