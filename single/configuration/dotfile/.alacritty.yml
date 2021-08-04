@@ -1,0 +1,112 @@
+env:
+  TERM: xterm-256color
+  WINIT_HIDPI_FACTOR: "1.0"
+  WINIT_X11_SCALE_FACTOR: "1.0"
+
+alt_send_esc: true
+live_config_reload: true
+window.dynamic_title: true
+
+window:
+  decorations: none
+  startup_mode: Windowed
+  dimensions:
+    columns: 79
+    lines: 24
+  position:
+    x: 0
+    y: 0
+  padding:
+    x: 0
+    y: 0
+  custom_cursor_colors: true
+  title: Alacritty
+  class:
+    instance: Alacritty
+    general: Alacritty
+  gtk_theme_variant: None
+
+cursor:
+  # Cursor style
+  #
+  # Values for `style`:
+  #   - ▇ Block
+  #   - _ Underline
+  #   - | Beam
+  style: Block
+
+  # If this is `true`, the cursor will be rendered as a hollow box when the
+  # window is not focused.
+  unfocused_hollow: true
+
+selection:
+  semantic_escape_chars: ',│`|:"'' ()[]{}<>'
+
+save_to_clipboard: true
+
+scrolling:
+  history: 5000
+  multiplier: 3
+
+font:
+  size: 14.0
+  normal:
+    family: MesloLGMDZ Nerd Font Mono
+    style: Regular
+  bold:
+    family: MesloLGMDZ Nerd Font Mono
+    style: Bold
+  italic:
+    family: MesloLGMDZ Nerd Font Mono
+    style: Italic
+  bold_italic:
+    family: MesloLGMDZ Nerd Font Mono
+    style: Bold Italic
+  offset:
+    x: 0
+    y: 0
+  glyph_offset:
+    x: 0
+    y: 0
+  use_thin_strokes: false
+  # If `true`, bold text is drawn using the bright color variants.
+draw_bold_text_with_bright_colors: true
+
+background_opacity: 0.90
+
+colors:
+  primary:
+    background: "#3B4252"
+    foreground: "#ECEFF4"
+    dim_foreground: "#4C566A"
+    bright_foreground: "#FFFFFF"
+  cursor:
+    text: "0x2E3440"
+    cursor: "0xD8DEE9"
+  normal:
+    black: "#3B4252"
+    red: "#BF616A"
+    green: "#A3BE8C"
+    yellow: "#EBCB8B"
+    blue: "#5E81AC"
+    magenta: "#B48EAD"
+    cyan: "#8FBCBB"
+    white: "#ECEFF4"
+  bright:
+    black: "#4C566A"
+    red: "#BF616A"
+    green: "#A3BE8C"
+    yellow: "#EBCB8B"
+    blue: "#5E81AC"
+    magenta: "#B48EAD"
+    cyan: "#8FBCBB"
+    white: "#ECEFF4"
+  dim:
+    black: "#3B4252"
+    red: "#BF616A"
+    green: "#A3BE8C"
+    yellow: "#EBCB8B"
+    blue: "#5E81AC"
+    magenta: "#B48EAD"
+    cyan: "#8FBCBB"
+    white: "#ECEFF4"
