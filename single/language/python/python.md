@@ -27,6 +27,10 @@ https://github.com/skywind3000/awesome-cheatsheets/blob/master/languages/python.
 ## 
 [Python print()](https://www.programiz.com/python-programming/methods/built-in/print)
 
+[Built-in Functions — Python print()](https://docs.python.org/3/library/functions.html)
+
+[Your Guide to the Python print() Function – Real Python](https://realpython.com/python-print/)
+
 ##
 book
 https://edu.anarcho-copy.org/Programming%20Languages/Python/
