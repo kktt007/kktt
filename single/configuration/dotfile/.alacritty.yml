@@ -38,6 +38,8 @@ cursor:
   # If this is `true`, the cursor will be rendered as a hollow box when the
   # window is not focused.
   unfocused_hollow: true
+  
+tabspaces: 4
 
 selection:
   semantic_escape_chars: ',│`|:"'' ()[]{}<>'
