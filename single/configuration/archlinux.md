@@ -48,7 +48,7 @@ Server = https://opentuna.cn/archlinuxcn/$arch
 
 ## 必备
 
-networkmanager nm-connection-editor dosfstools ntfs-3g git wget curl zsh zsh-autosuggestions zsh-syntax-highlighting zsh-completions bbswitch bash-completion rxvt-unicode alacritty
+networkmanager nm-connection-editor dosfstools ntfs-3g git wget curl zsh zsh-autosuggestions zsh-syntax-highlighting zsh-completions bbswitch bash-completion rxvt-unicode alacritty ranger
 
 sudo(包括含在base-devel中)
 
@@ -124,7 +124,7 @@ ttf-sarasa-gothic
 
 ttf-twcns-fonts
 
-st
+nerd-fonts-dejavu-complete
 
 (<string>MesloLGMDZ Nerd Font Mono</string>)
 
