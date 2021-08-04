@@ -67,6 +67,7 @@ zstyle :prompt:pure:git:stash show yes
 rm -f ~/.zcompdump; compinit
 prompt pure
 
+# https://wiki.archlinux.org/title/Zsh#Key_bindings
 export VISUAL=nvim
 export EDITOR="$VISUAL"
 
