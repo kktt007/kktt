@@ -58,6 +58,7 @@ Plug 'junegunn/vim-easy-align' " 对齐
 " git
 Plug 'tpope/vim-fugitive' " git 插件
 Plug 'airblade/vim-gitgutter' " 显示git变化
+Plug 'junegunn/gv.vim' "参考https://dev.to/evilcel3ri/i-spent-3-years-configuring-n-vim-and-this-what-i-learnt-22on
 
 " 自动完成 =============coc======================
 " 查看 :CocInfo
