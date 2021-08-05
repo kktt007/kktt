@@ -136,7 +136,7 @@ nerd-fonts-dejavu-complete
 
 ## 工具
 
-- sudo pacman -S python python-pip python-pipenv
+- sudo pacman -S python python-pip python-pipenv ripgrep
 
 yay：
 
