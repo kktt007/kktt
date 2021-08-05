@@ -67,6 +67,9 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " 语法检查
 Plug 'dense-analysis/ale'
 
+" test
+Plug 'vim-test/vim-test'
+
 " markdown
 Plug 'dhruvasagar/vim-table-mode' " 自动表格, 使用`\tm` 就进入了表格模式, 会进行自动对齐
 Plug 'instant-markdown/vim-instant-markdown', {'for': 'markdown', 'do': 'yarn install'}
