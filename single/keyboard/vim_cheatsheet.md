@@ -16,3 +16,4 @@ https://github.com/serebrov/vimrc/blob/master/.vimrc
 
 https://github.com/bobwhitelock/dotfiles/blob/master/vimrc
 
+https://gist.github.com/awidegreen/3854277
