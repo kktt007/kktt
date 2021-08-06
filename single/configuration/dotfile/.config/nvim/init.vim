@@ -44,7 +44,8 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'luochen1990/rainbow' " 括号颜色
 " Plug 'Yggdroot/indentLine' " 缩进标尺
 Plug 'lukas-reineke/indent-blankline.nvim'
-
+Plug 'Konfekt/FastFold'
+Plug 'tpope/vim-vinegar'
 " 查找
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
