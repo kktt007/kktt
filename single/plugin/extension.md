@@ -15,10 +15,12 @@ Extensity	jjmflmamggggndanpgfnpelongoepncg
 Git Master	klmeolbcejnhefkapdchfhlhhjgobhmo
 GitHub Downloader	jplmabjbdhggnlhndkdfciacklbjcfel
 Bitwarden	nngceckbapebfimnlniiiahkandclblb
-cVim	ihlenndgcmojhcghmfjfneahoeklbjjh
+~~cVim	ihlenndgcmojhcghmfjfneahoeklbjjh~~
 crxMouse Chrome™ 手势	jlgkpaicikihijadgifklkbpdajbkhjo
 graphitabs dcfclemgmkccmnpgnldhldjmflphkimp
 surfingkeys gfbliohnnapiefjpjlpjnehglfpaknnc
+
+Download Manager ofpglhlcdbjdhlacgbljnildhajfmlei
 [Google Hit Hider by Domain](GreasyFork) [greaskfork](https://github.com/cobaltdisco/Google-Chinese-Results-Blocklist/)
 ![](https://kktt007.top/cfg/crxmouse06.jpg)
 ![](https://kktt007.top/cfg/crxmouse05.jpg)
