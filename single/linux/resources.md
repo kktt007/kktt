@@ -20,3 +20,11 @@ http://www.ee.surrey.ac.uk/Teaching/Unix/index.html
 http://www2.geog.ucl.ac.uk/~plewis/geogg122_current/_build/html/Chapter1_Unix/f3_1_unix_intro.html
 
 https://www.pluralsight.com/guides/beginner-linux-navigation-manual
+
+https://www.gnu.org/software/findutils/
+
+http://xed.ch/h/unix
+
+http://www.csc.villanova.edu/~mdamian/unix/tutorial/
+
+https://flylib.com/books/en/2.250.1/
