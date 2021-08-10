@@ -28,3 +28,5 @@ http://xed.ch/h/unix
 http://www.csc.villanova.edu/~mdamian/unix/tutorial/
 
 https://flylib.com/books/en/2.250.1/
+
+课程 https://hope.simons-rock.edu/~mbarsky/utor/teaching/CSC209-2016/content/index.shtml
