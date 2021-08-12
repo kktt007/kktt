@@ -65,6 +65,8 @@ zstyle :prompt:pure:git:stash show yes
 rm -f ~/.zcompdump; compinit
 prompt pure
 
+# 你可以把这个加入到/etc/profile文件中，这样它就会在你每次打开一个会话的时候自动运行了：
+# echo 'eval `ssh-agent`' >> /etc/profile
 zstyle :omz:plugins:ssh-agent agent-forwarding on
 zstyle :omz:plugins:ssh-agent identities id_rsa_github id_rsa_gitee
 
