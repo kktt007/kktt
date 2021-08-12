@@ -51,8 +51,6 @@ ZSH_THEME=""
 fpath+=$ZSH_CUSTOM/themes/pure
 plugins=(git git-prompt sudo fzf ripgrep npm yarn systemd aliases alias-finder z history zsh_reload)
 
-source $ZSH/oh-my-zsh.sh
-source ~/github/z.sh
 # source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 # source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
@@ -66,6 +64,9 @@ zstyle ':prompt:pure:prompt:*' color cyan
 zstyle :prompt:pure:git:stash show yes
 rm -f ~/.zcompdump; compinit
 prompt pure
+
+zstyle :omz:plugins:ssh-agent agent-forwarding on
+zstyle :omz:plugins:ssh-agent identities id_rsa_github id_rsa_gitee
 
 # https://wiki.archlinux.org/title/Zsh#Key_bindings
 export VISUAL=nvim
@@ -108,4 +109,6 @@ alias .6='cd ../../../../../../'            # Go back 6 directory levels
 
 alias af='alias-finder'
 
+source $ZSH/oh-my-zsh.sh
+source ~/github/z.sh
 ```
