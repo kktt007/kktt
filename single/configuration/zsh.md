@@ -49,7 +49,7 @@ export ZSH="/home/kktt/.oh-my-zsh"
 
 ZSH_THEME=""  
 fpath+=$ZSH_CUSTOM/themes/pure
-plugins=(git git-prompt sudo fzf ripgrep npm yarn systemd aliases alias-finder z history zsh_reload)
+plugins=(git git-prompt sudo fzf ripgrep npm yarn systemd aliases alias-finder z history ssh-agent zsh_reload)
 
 # source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 # source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
