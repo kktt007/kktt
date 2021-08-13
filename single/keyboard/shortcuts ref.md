@@ -148,3 +148,7 @@ vscode自带的快捷键
 
 insert line below
 `ctrl + enter`
+
+
+## meld
+[Meld - Help](https://meldmerge.org/help/keyboard-shortcuts.html)
