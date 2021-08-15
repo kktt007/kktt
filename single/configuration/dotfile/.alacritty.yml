@@ -1,3 +1,4 @@
+# https://github.com/alacritty/alacritty/blob/master/alacritty.yml
 env:
   TERM: xterm-256color
   WINIT_HIDPI_FACTOR: "1.0"
@@ -8,14 +9,14 @@ live_config_reload: true
 window.dynamic_title: true
 
 window:
-  decorations: none
+  decorations: full
   startup_mode: Windowed
   dimensions:
-    columns: 79
-    lines: 24
+    columns: 179
+    lines: 35
   position:
-    x: 0
-    y: 0
+    x: 300
+    y: 150
   padding:
     x: 0
     y: 0
@@ -38,7 +39,7 @@ cursor:
   # If this is `true`, the cursor will be rendered as a hollow box when the
   # window is not focused.
   unfocused_hollow: true
-  
+
 tabspaces: 4
 
 selection:
@@ -74,41 +75,61 @@ font:
   # If `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: true
 
-background_opacity: 0.90
+# background_opacity: 0.90
 
 colors:
+
   primary:
-    background: "#3B4252"
-    foreground: "#ECEFF4"
-    dim_foreground: "#4C566A"
-    bright_foreground: "#FFFFFF"
+    background: '0x282a36'
+    foreground: '0xf8f8f2'
   cursor:
-    text: "0x2E3440"
-    cursor: "0xD8DEE9"
+    text: CellBackground
+    cursor: CellForeground
+  vi_mode_cursor:
+    text: CellBackground
+    cursor: CellForeground
+  search:
+    matches:
+      foreground: '0x44475a'
+      background: '0x50fa7b'
+    focused_match:
+      foreground: '0x44475a'
+      background: '0xffb86c'
+    bar:
+      background: '0x282a36'
+      foreground: '0xf8f8f2'
+  line_indicator:
+    foreground: None
+    background: None
+  selection:
+    text: CellForeground
+    background: '0x44475a'
+
   normal:
-    black: "#3B4252"
-    red: "#BF616A"
-    green: "#A3BE8C"
-    yellow: "#EBCB8B"
-    blue: "#5E81AC"
-    magenta: "#B48EAD"
-    cyan: "#8FBCBB"
-    white: "#ECEFF4"
+    black:   '#282a36'
+    red:     '#ff5c57'
+    green:   '#5af78e'
+    yellow:  '#f3f99d'
+    blue:    '#57c7ff'
+    magenta: '#ff6ac1'
+    cyan:    '#9aedfe'
+    white:   '#f1f1f0'
+
   bright:
-    black: "#4C566A"
-    red: "#BF616A"
-    green: "#A3BE8C"
-    yellow: "#EBCB8B"
-    blue: "#5E81AC"
-    magenta: "#B48EAD"
-    cyan: "#8FBCBB"
-    white: "#ECEFF4"
+    black:   '#686868'
+    red:     '#ff5c57'
+    green:   '#5af78e'
+    yellow:  '#f3f99d'
+    blue:    '#57c7ff'
+    magenta: '#ff6ac1'
+    cyan:    '#9aedfe'
+    white:   '#eff0eb'
   dim:
-    black: "#3B4252"
-    red: "#BF616A"
-    green: "#A3BE8C"
-    yellow: "#EBCB8B"
-    blue: "#5E81AC"
-    magenta: "#B48EAD"
-    cyan: "#8FBCBB"
-    white: "#ECEFF4"
+    black:   '0x14151b'
+    red:     '0xff2222'
+    green:   '0x1ef956'
+    yellow:  '0xebf85b'
+    blue:    '0x4d5b86'
+    magenta: '0xff46b0'
+    cyan:    '0x59dffc'
+    white:   '0xe6e6d1'
