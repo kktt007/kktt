@@ -76,15 +76,6 @@ cat
 <
 >
 
-
-要立足当下,不能用别人的高度要求自己,听起来对的是,往往是最大的错误.每个人根本上是不一样的.
-
-要像教小孩子一样去学习,把最最最简单基础的掌握了,慢慢的学习新的,不能学非常有难度的,这不现实.
-
-千万别看轻自己,你现在做的可能不是多了不起的,但是他的意义很大.
-
-有时候就该承认人的物质性,人的反面,这样才说明人有正面.
-
 ## cat
 cat foo
 cat foo1
@@ -140,6 +131,8 @@ Redirect stdout to stderr (FD 2)
 [Linux command basics reference guide - Linux tutorial from PenguinTutor](http://www.penguintutor.com/linux/command-basics-reference)
 [Pipes and Redirects - Master the Bash Shell](https://www.educative.io/courses/master-the-bash-shell/3w5GrpYLENn)
 
+[I/O Redirection and Pipes](https://homepages.uc.edu/~thomam/Intro_Unix_Text/IO_Redir_Pipes.html)
+
 ## bash
 [Advanced Bash Shell Scripting Guide - Special Characters](https://www.linuxtopia.org/online_books/advanced_bash_scripting_guide/special-chars.html)
 
@@ -166,4 +159,3 @@ basic
 [Chapter 1. GNU/Linux tutorials](https://www.debian.org/doc/manuals/debian-reference/ch01.en.html)
 
 [Bash Guide for Beginners](https://tldp.org/LDP/Bash-Beginners-Guide/html/Bash-Beginners-Guide.html)
-
