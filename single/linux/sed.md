@@ -118,17 +118,25 @@ Redirect stdout to stderr (FD 2)
 >&2
 
 [sed, a stream editor](https://www.gnu.org/software/sed/manual/sed.html#sed-addresses)
+
 [sed, a stream editor](https://www.gnu.org/software/sed/manual/sed.html#sed-script-overview)
 
 [General good housekeeping](https://tldp.org/LDP/intro-linux/html/sect_07_01.html#sect_07_01_01)
+
 [Advanced redirection features](https://tldp.org/LDP/intro-linux/html/sect_05_02.html)
 
 [Redirecting Input and Output](https://fsl.fmrib.ox.ac.uk/fslcourse/unix_intro/io.html)
+
 [Input and output redirection - IBM Documentation](https://www.ibm.com/docs/en/aix/7.1?topic=administration-input-output-redirection)
+
 [Redirection (computing) - Wikipedia](https://en.wikipedia.org/wiki/Redirection_(computing))
+
 [Bash pipe tutorial](https://linuxhint.com/bash_pipe_tutorial/)
+
 [Learn the Command Line: Redirecting Input and Output Cheatsheet | Codecademy](https://www.codecademy.com/learn/learn-the-command-line/modules/learn-the-command-line-redirection/cheatsheet)
+
 [Linux command basics reference guide - Linux tutorial from PenguinTutor](http://www.penguintutor.com/linux/command-basics-reference)
+
 [Pipes and Redirects - Master the Bash Shell](https://www.educative.io/courses/master-the-bash-shell/3w5GrpYLENn)
 
 [I/O Redirection and Pipes](https://homepages.uc.edu/~thomam/Intro_Unix_Text/IO_Redir_Pipes.html)
