@@ -109,6 +109,7 @@ cat foo foo1 > foo2
 >> operator append
 
 < standard input 0
+
 > standard output 1
 
 Redirect stdout to stdout (FD 1)
@@ -139,23 +140,36 @@ Redirect stdout to stderr (FD 2)
 
 [Pipes and Redirects - Master the Bash Shell](https://www.educative.io/courses/master-the-bash-shell/3w5GrpYLENn)
 
+
 [I/O Redirection and Pipes](https://homepages.uc.edu/~thomam/Intro_Unix_Text/IO_Redir_Pipes.html)
 
 ## bash
 [Advanced Bash Shell Scripting Guide - Special Characters](https://www.linuxtopia.org/online_books/advanced_bash_scripting_guide/special-chars.html)
 
-| and |&
+| and |& [Bash Reference Manual](https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html)
 
 2>&1 # & 表示等同于的意思，2>&1，表示2的输出重定向等同于1
 
 1 表示stdout标准输出，系统默认值是1，所以">/dev/null"等同于 "1>/dev/null"
 
-0表示标准输入
-1表示标准输出
-2表示标准错误输出
-> 默认为标准输出重定向，与 1> 相同
-2>&1 意思是把 标准错误输出 重定向到 标准输出.
-&>file 意思是把 标准输出 和 标准错误输出 都重定向到文件file中
+- 0表示标准输入
+
+- 1表示标准输出
+
+- 2表示标准错误输出
+
+- > 默认为标准输出重定向，与 1> 相同
+
+- 2>&1 意思是把 标准错误输出 重定向到 标准输出.(2>1把标准错误输出到文件1)
+
+- &>file 意思是把 标准输出 和 标准错误输出 都重定向到文件file中()相当于>file 2>&1的组合体)
+
+- |& was added to Bash 4 as an abbreviation for `2>&1 |`
+
+- ls > dirlist 2>&1和ls 2>&1 > dirlist的区别 [Bash Reference Manual](https://www.gnu.org/software/bash/manual/bash.html#Redirecting-Output)
+第二个没有stderr到文件
+
+>和>| [Special Characters](https://tldp.org/LDP/abs/html/special-chars.html) >| redirection operator - the redirection will work, even if noclobber is set.强制重定向
 
 basic
 [I/O Redirection](https://tldp.org/LDP/abs/html/io-redirection.html)
