@@ -181,3 +181,92 @@ basic
 [Chapter 1. GNU/Linux tutorials](https://www.debian.org/doc/manuals/debian-reference/ch01.en.html)
 
 [Bash Guide for Beginners](https://tldp.org/LDP/Bash-Beginners-Guide/html/Bash-Beginners-Guide.html)
+
+
+## note:
+
+https://www.gnu.org/software/sed/manual/sed.html#Other-Resources
+
+https://www.gnu.org/software/sed/manual/sed.html#index-0-address
+
+By default sed prints all processed input 
+
+sed treats multiple input files as one long stream.
+
+-n --quiet --silent # disable this automatic printing, suppress output
+
+-i --in-place # edit in-place
+
+-e --expression
+
+-f --file
+
+; semicolons # separete commands or newlines (ASCII 10) line feed LF
+
+## https://www.gnu.org/software/sed/manual/sed.html#sed-addresses
+
+- replace
+'s/hello/world/'
+
+- replace only on line 144
+'144s/hello/world/'
+
+- replace only in lines containing the world 'apple'
+'/apple/s/hello/world/'
+
+- replace only in lines 4 to 17(inclusive)
+'4,17s/hello/world/'
+
+- replace only in lines not containing the word 'apple'
+'/apple/!s/hello/world/'
+
+- replace only in lines excluding lines 4 to 17
+'4,17!s/hello/world/'
+
+- first~step
+seq 10 | sed -n '0~4p'
+
+## command
+
+s command
+‘s/regexp/replacement/flags
+
+- d delete
+'30,35d' delete lines 30 to 35
+
+- q quit
+'/^foo/q42' if found a line starting with the word 'foo', terminate with exit status 42
+
+- n skip lines
+'n;n;s/./x/' skip 2 lines
+'n;n;n;s/./x/' skip 3 lines
+
+## https://www.gnu.org/software/sed/manual/sed.html#Multiple-commands-syntax
+- a,c,i (append/change/insert)
+
+- Separate the commands using -e or a newline:
+```
+-e 1aHello -e 2d
+```
+```
+'1aHello
+2d'
+```
+
+以下可以
+```
+sed '1a\
+Hello
+2d'
+```
+
+---
+
+- # (comment)
+A comment, until the next newline.
+
+## commands summary
+https://www.gnu.org/software/sed/manual/sed.html#sed-commands-list
+
+{ cmd ; cmd ... }
+Group several commands together.
