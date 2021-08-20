@@ -6,6 +6,8 @@ function
 
 [PHP printf() Function](https://www.w3schools.com/php/func_string_printf.asp)
 
+[PHP: printf - Manual](https://www.php.net/manual/en/function.printf.php)
+
 [Output Formatting Using Printf Function in C](https://www.knowprogram.com/c-programming/printf-in-c/)
 
 [Control Letters (The GNU Awk User’s Guide)](https://www.gnu.org/software/gawk/manual/html_node/Control-Letters.html)
