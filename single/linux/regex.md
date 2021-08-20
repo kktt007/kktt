@@ -1,3 +1,13 @@
+## regex test
+
+https://www.regexpal.com/
+
+https://www.regextester.com/
+
+https://regex101.com/
+
+[Regular Expressions Quick Start](https://www.regular-expressions.info/quickstart.html)
+
 https://tldp.org/LDP/Bash-Beginners-Guide/html/sect_04_01.html
 
 https://www.funtoo.org/Sed_by_Example,_Part_1#Regular_expression_refresher
@@ -49,8 +59,6 @@ https://linuxtechlab.com/bash-scripting-use-regex-intermediate/
 [Regular-Expressions.info - Regex Tutorial, Examples and Reference - Regexp Patterns](https://www.regular-expressions.info/)
 
 https://provost.tufts.edu/institutionalresearch/files/Bergom-Butler-NEAIR-2019-regular-expressions-in-Tableau.pdf
-
-https://www.regextester.com/
 
 [Regular Expressions/Glossary - Wikibooks, open books for an open world](https://en.wikibooks.org/wiki/Regular_Expressions/Glossary)
 
