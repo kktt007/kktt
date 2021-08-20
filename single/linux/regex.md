@@ -65,3 +65,5 @@ https://provost.tufts.edu/institutionalresearch/files/Bergom-Butler-NEAIR-2019-r
 [8 Regular Expressions You Should Know](https://code.tutsplus.com/tutorials/8-regular-expressions-you-should-know--net-6149)
 
 https://github.com/ziishaned/learn-regex
+
+[A Regular Expression Primer](http://marvin.cs.uidaho.edu/~heckendo/Handouts/regex.html)
