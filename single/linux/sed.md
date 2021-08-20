@@ -1,5 +1,12 @@
 Sed
 
+grep
+
+## grep
+https://www.gnu.org/software/grep/manual/grep.pdf
+
+[Invoking (GNU Grep 3.7)](https://www.gnu.org/software/grep/manual/html_node/Invoking.html)
+
 https://sed.js.org/
 
 https://www.theunixschool.com/p/awk-sed.html
@@ -202,6 +209,28 @@ sed treats multiple input files as one long stream.
 -f --file
 
 ; semicolons # separete commands or newlines (ASCII 10) line feed LF
+
+all sed commands may be separated by newlines
+
+
+sed '1d
+3d
+5d'
+
+A semicolon (‘;’) may be used to separate most simple commands:
+
+sed '1d;3d;5d'
+
+[sed, a stream editor](https://www.gnu.org/software/sed/manual/sed.html#Branching-and-flow-control)
+
+b
+branch unconditionally (that is: always jump to a label, skipping or repeating other commands, without restarting a new cycle). Combined with an address, the branch can be conditionally executed on matched lines.
+
+t
+branch conditionally (that is: jump to a label) only if a s/// command has succeeded since the last input line was read or another conditional branch was taken.
+
+T
+similar but opposite to the t command: branch only if there has been no successful substitutions since the last input line was read.
 
 ## https://www.gnu.org/software/sed/manual/sed.html#sed-addresses
 
