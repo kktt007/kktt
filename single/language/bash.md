@@ -4,6 +4,16 @@ https://explainshell.com/explain?cmd=df
 
 $@
 
+[Shell Scripting](http://www.learnlinux.org.za/courses/build/shell-scripting/)
+
+[linux-training.be](https://linux-training.be/)
+
+[The Linux Documentation Project: document listing](https://tldp.org/HOWTO/pdf/)
+
+[16 Keyboard Shortcuts for Bash Shell](https://www.keyxl.com/aaaf192/83/Linux-Bash-Shell-keyboard-shortcuts.htm)
+
+[Absolute basics](https://linux.die.net/Intro-Linux/sect_02_02.html)
+
 https://sodocumentation.net/bash/topic/4797/internal-variables
 
 https://linuxize.com/post/bash-functions/
