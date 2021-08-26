@@ -1,5 +1,7 @@
 [Alibaba Cloud Linux技术图谱](https://developer.aliyun.com/graph/linux?utm_content=m_1000280751)
 
+[linux-training.be](http://linux-training.be/)
+
 https://www.gnu.org/software/coreutils/manual/coreutils.html
 
 https://acadix.biz/Unix-guide/HTML/ch02s05.html
