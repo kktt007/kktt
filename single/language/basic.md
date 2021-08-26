@@ -87,3 +87,30 @@ https://tldp.org/LDP/abs/html/internal.html
 https://tldp.org/LDP/abs/html/part4.html
 
 https://www.systutorials.com/
+
+## shell basic
+[Linux Documentation](https://linux.die.net/)
+
+[Useful Commands](https://web2.clarkson.edu/class/cs141/webresources/commands.html)
+
+[Linux Shell Commands](https://docs.cs.cf.ac.uk/notes/linux-shell-commands/)
+
+https://tldp.org/LDP/intro-linux/html/
+
+https://linux.101hacks.com/toc/
+
+[Shell login - profiles and scripts - Helpful](https://helpful.knobs-dials.com/index.php/Shell_login_-_profiles_and_scripts)
+
+[Introduction - LPIC1 Exam Guide](https://borosan.gitbook.io/lpic1-exam-guide/)
+
+[SystemAdministration - Debian Wiki](https://wiki.debian.org/SystemAdministration?action=show&redirect=CategorySystemAdministration)
+
+[Bash Guide for Beginners](https://tldp.org/LDP/Bash-Beginners-Guide/html/index.html)
+
+[CategoryShell - Greg's Wiki](https://mywiki.wooledge.org/CategoryShell)
+
+[LinuxCommand.org: Writing shell scripts.](https://linuxcommand.org/lc3_writing_shell_scripts.php#contents)
+
+[LPIC-1 Exam 102](https://learning.lpi.org/en/learning-materials/102-500/)
+
+https://www.kau.edu.sa/Files/830/Files/60761_Linux.pdf
