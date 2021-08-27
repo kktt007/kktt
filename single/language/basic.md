@@ -4,6 +4,14 @@
 
 https://www.gnu.org/software/coreutils/manual/coreutils.html
 
+[Chapter 1. GNU/Linux tutorials](https://www.debian.org/doc/manuals/debian-reference/ch01.en.html)
+
+[Unix/Linux Permissions - An Introduction and Tutorial](https://www.grymoire.com/Unix/Permissions.html)
+
+[Manage file permissions on Unix-like systems](https://kb.iu.edu/d/abdb)
+
+[User Manual Search Engine](https://usermanual.wiki/search.php?q=file%20permissions)
+
 https://acadix.biz/Unix-guide/HTML/ch02s05.html
 
 https://en.wikibooks.org/wiki/Category:Book:Programming_Fundamentals
