@@ -14,6 +14,29 @@ https://www.linux.com/training-tutorials/
 https://linuxtools-rst.readthedocs.io/zh_CN/latest/
 
 ## basic
+[Linux Fundamentals](https://linux-training.be/funhtml/index.html)
+
+[Docs/Drafts/CommandLineSurvivalGuide - Fedora Project Wiki](https://fedoraproject.org/wiki/Docs/Drafts/CommandLineSurvivalGuide)
+
+[System Administration Practice](https://people.cs.nctu.edu.tw/~wangth/course/sysadm2017/)
+
+[UNIX Lecture Notes](http://www.compsci.hunter.cuny.edu/~sweiss/course_materials/unix_lecture_notes.php)
+
+https://www.gnu.org/software/coreutils/manual/coreutils.html
+
+[Appendix - horwood.biz](https://www.horwood.biz/index.php?page=appendix)
+
+[Linux Guide/Tutorial - Aalto Linux Guide](https://linux.aalto.fi/linux/)
+
+[CS 241 · Filesystems](http://cs241.cs.illinois.edu/coursebook/Filesystems)
+
+[Linux quick reference / abbreviations](http://aeno-refs.com/qr-linux/abbrev.html)
+
+[Index of /~jmarty/courses/LinuxStuff/BashGuides](https://people.cs.clemson.edu/~jmarty/courses/LinuxStuff/BashGuides/)
+
+[BTLB Online - Table Of Contents](https://book.huihoo.com/brian-and-tom-linux-book/btlb_toc.html)
+
+[Debian Tutorial (Obsolete Documentation)](https://www.debian.org/doc/manuals/debian-tutorial/index.html#contents)
 
 http://www.ee.surrey.ac.uk/Teaching/Unix/index.html
 
